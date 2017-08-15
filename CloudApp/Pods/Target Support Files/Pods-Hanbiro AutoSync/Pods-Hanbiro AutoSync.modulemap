@@ -1,0 +1,6 @@
+framework module Pods_Hanbiro_AutoSync {
+  umbrella header "Pods-Hanbiro AutoSync-umbrella.h"
+
+  export *
+  module * { export * }
+}

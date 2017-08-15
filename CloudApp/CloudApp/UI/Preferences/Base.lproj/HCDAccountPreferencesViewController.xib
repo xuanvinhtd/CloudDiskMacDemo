@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="HCDAccountPreferencesViewController" customModule="Hanbiro_AutoSync" customModuleProvider="target">
+            <connections>
+                <outlet property="barQuota" destination="nqA-mB-vci" id="Hwb-cu-KMm"/>
+                <outlet property="labelQuota" destination="ynz-qX-FaD" id="PfN-ef-RuZ"/>
+                <outlet property="labelUserName" destination="ZpG-1u-5L5" id="9mp-cZ-drv"/>
+                <outlet property="logOutButton" destination="eZC-cA-paS" id="hPr-TB-2bL"/>
+                <outlet property="spinnerQuota" destination="wBT-Jb-Q0W" id="mCr-nS-64a"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="570" height="218"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="mXR-y4-B5b">
+                    <rect key="frame" x="0.0" y="85" width="570" height="5"/>
+                </box>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ynz-qX-FaD">
+                    <rect key="frame" x="50" y="121" width="119" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Quota (calculating)" id="41W-rd-5hX">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <levelIndicator verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nqA-mB-vci">
+                    <rect key="frame" x="197" y="121" width="285" height="16"/>
+                    <levelIndicatorCell key="cell" alignment="left" maxValue="100" levelIndicatorStyle="continuousCapacity" id="xy6-4S-rxs"/>
+                </levelIndicator>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DPt-Dj-9n4">
+                    <rect key="frame" x="46" y="32" width="128" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="116" id="1Ml-mV-ca9"/>
+                    </constraints>
+                    <buttonCell key="cell" type="push" title="Logout" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="eZC-cA-paS">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="didClickLogout:" target="-2" id="0uP-Mz-jX5"/>
+                    </connections>
+                </button>
+                <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="wBT-Jb-Q0W">
+                    <rect key="frame" x="173" y="121" width="16" height="16"/>
+                </progressIndicator>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZpG-1u-5L5">
+                    <rect key="frame" x="50" y="167" width="150" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="username@domain.com" id="hSa-Qx-Xbw">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="nqA-mB-vci" firstAttribute="leading" secondItem="ynz-qX-FaD" secondAttribute="trailing" constant="30" id="2gl-tc-mCj"/>
+                <constraint firstItem="mXR-y4-B5b" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="130" id="4W1-NP-uom"/>
+                <constraint firstItem="nqA-mB-vci" firstAttribute="width" secondItem="Hz6-mo-xeY" secondAttribute="width" multiplier="0.5" id="Cys-VN-1kG"/>
+                <constraint firstItem="DPt-Dj-9n4" firstAttribute="top" secondItem="mXR-y4-B5b" secondAttribute="bottom" constant="27" id="FPA-AN-9Zo"/>
+                <constraint firstItem="mXR-y4-B5b" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="KyK-dc-dzJ"/>
+                <constraint firstItem="ynz-qX-FaD" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="80" id="MtN-Rm-eeu"/>
+                <constraint firstItem="wBT-Jb-Q0W" firstAttribute="leading" secondItem="ynz-qX-FaD" secondAttribute="trailing" constant="6" id="NDM-LG-Qzn"/>
+                <constraint firstItem="ZpG-1u-5L5" firstAttribute="leading" secondItem="ynz-qX-FaD" secondAttribute="leading" id="NMc-kF-Xgi"/>
+                <constraint firstItem="mXR-y4-B5b" firstAttribute="width" secondItem="Hz6-mo-xeY" secondAttribute="width" id="Roe-12-ael"/>
+                <constraint firstItem="DPt-Dj-9n4" firstAttribute="leading" secondItem="ynz-qX-FaD" secondAttribute="leading" id="Xo1-k1-VXh"/>
+                <constraint firstItem="ynz-qX-FaD" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="52" id="fpm-hT-bAI"/>
+                <constraint firstItem="nqA-mB-vci" firstAttribute="centerY" secondItem="ynz-qX-FaD" secondAttribute="centerY" id="ifH-A8-ACF"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nqA-mB-vci" secondAttribute="trailing" constant="30" id="smn-hx-iPf"/>
+                <constraint firstItem="ZpG-1u-5L5" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="34" id="v58-TP-Ech"/>
+                <constraint firstItem="wBT-Jb-Q0W" firstAttribute="centerY" secondItem="ynz-qX-FaD" secondAttribute="centerY" id="wxJ-7G-E94"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>

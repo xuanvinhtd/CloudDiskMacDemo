@@ -1,0 +1,64 @@
+/* 
+  Localizable.strings
+  CloudApp
+
+  Created by Hanbiro Inc on 1/13/17.
+  Copyright 짤 2017 Hanbiro Inc. All rights reserved.
+*/
+"Version"                   = "Version";
+"Login"                     = "로그인";
+"Logout"                    = "로그아웃";
+"Domain"                    = "도메인";
+"User name"                 = "유저명";
+"Password"                  = "비밀번호";
+"Resume Syncing"            = "동기화 재시작";
+"Pause Syncing"             = "동기화를 중지합니다";
+"Reading Sync Folder"       = "동기화폴더의 파일을 읽고 있습니다.";
+"Reading server file list"  = "서버파일목록을 읽고 있습니다.";
+"sync completed"            = "동기화 완료";
+"Login to account"          = "Login to account";
+"Success login to account"  = "로그인이 완료되었습니다.";
+"Find missing files"        = "누락된 파일 확인";
+"Update Server File List"   = "클라우드 파일목록 갱신";
+"Update Local File List"    = "동기화 폴더 목록갱신";
+"Reading server file list"  = "서버파일목록을 읽고 있습니다";
+"Open cloud folder"         = "클라우드 오토싱크 폴더열기";
+"Quit"                      = "종료";
+"Preferences"               = "환경설정";
+"General"                   = "일반";
+"Account"                   = "계정";
+"About"                     = "약";
+"Sync Folder:"              = "동기화 폴더를:";
+"Open At Login"             = "로그인시에 설정 윈도우를 엽니다.";
+"ShowNotification"              = "Show notification when sync done.";
+"Do not auto show sync fails."  = "Do not auto show sync fails.";
+"Change Sync Folder"        = "클라우드 오토싱크 폴더를 변경합니다";
+"Quota"                     = "용량 :";
+"Language"                  = "언어";
+"Choose Sync Folder"        = "동기화 폴더를 선택하세요";
+"Your sync folder: "        = "동기화 폴더: ";
+"Warning"                   = "경고";
+"not loged in"              = "로그인해주세요";
+"Quota (can't calculating)" = "용량 (계산할 수 없다)";
+"App Will Restart To Make Change" = "설정을 적용하기 위해서 클라우드 오토싱크를 재시작합니다.";
+"Select New Sync Folder"    = "동기화 폴더를 선택하세요";
+"Count Sync File"           = "동기화 파일 확인";
+"Please choose the location you wish to store your sync folder" = "동기화 폴더를 선택하세요";
+"Open at login to sync files automatically" = "Open at login to sync files automatically";
+"Next" = "다음";
+"Cancel" = "Cancel";
+"files need to sync:" = "파일을 동기화해야합니다:";
+"Sync fail: " = "Sync fail: ";
+
+"New version" = "New version";
+"Please update new version." = "Please update new version.";
+"Sync Successed" = "Sync Successed";
+"Done sync." = "Done sync.";
+"UnSelect All" = "UnSelect All";
+"Select All" = "Select All";
+"Select file" = "Select file";
+"Please select file to retry." = "Please select file to retry.";
+"Ok" = "Ok";
+"Notification" = "Notification";
+"Cannot retry sync because app is syncing. Please waiting..." = "Cannot retry sync because app is syncing. Please waiting...";
+"Sync fail" = "Sync fail";

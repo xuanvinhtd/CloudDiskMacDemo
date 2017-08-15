@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  CloudApp
+
+  Created by Hanbiro Inc on 1/13/17.
+  Copyright © 2017 Hanbiro Inc. All rights reserved.
+*/
+
+"Version"                   = "Version";
+"Login"                     = "Login";
+"Logout"                    = "Logout";
+"Domain"                    = "Domain";
+"User name"                 = "User name";
+"Password"                  = "Password";
+"Resume Syncing"            = "Resume Syncing";
+"Pause Syncing"             = "Pause Syncing";
+"Reading Sync Folder"       = "Reading Sync Folder";
+"Reading server file list"  = "Reading server file list";
+"Sync completed"            = "Sync completed";
+"Login to account"          = "Login to account";
+"Success login to account"  = "Success login to account";
+"Find missing files"        = "Find missing files";
+"Update Server File List"   = "Update Server File List";
+"Reading server file list"  = "Reading server file list";
+"Update Local File List"    = "Update Local File List";
+"Open cloud folder"         = "Open cloud folder";
+"Quit"                      = "Quit";
+"Preferences"               = "Preferences";
+"General"                   = "General";
+"Account"                   = "Account";
+"About"                     = "About";
+"Sync Folder:"              = "Sync Folder";
+"Open At Login"             = "Open At Login";
+"ShowNotification"              = "Show notification when sync done.";
+"Do not auto show sync fails."  = "Do not auto show sync fails.";
+"Change Sync Folder"        = "Change Sync Folder";
+"Quota"                     = "Quota :";
+"Language"                  = "Language";
+"Choose Sync Folder"        = "Choose Sync Folder";
+"Your sync folder: "        = "Your sync folder: ";
+"Warning"                   = "Warning";
+"not loged in"              = "not loged in";
+"Quota (can't calculating)" = "Quota (can't calculating)";
+"App Will Restart To Make Change" = "App Will Restart To Make Change";
+"Select New Sync FoldSer"    = "Select New Sync Folder";
+"Count Sync File"           = "Count Sync File";
+"Please choose the location you wish to store your sync folder" = "Please choose the location you wish to store your sync folder";
+"Open at login to sync files automatically" = "Open at login to sync files automatically";
+"Next" = "Next";
+"Cancel" = "Cancel";
+"files need to sync:" = "files need to sync:";
+"Sync fail: " = "Sync fail: ";
+
+"New version" = "New version";
+"Please update new version." = "Please update new version.";
+"Sync Successed" = "Sync Successed";
+"Done sync." = "Done sync.";
+"UnSelect All" = "UnSelect All";
+"Select All" = "Select All";
+"Select file" = "Select file";
+"Please select file to retry." = "Please select file to retry.";
+"Ok" = "Ok";
+"Notification" = "Notification";
+"Cannot retry sync because app is syncing. Please waiting..." = "Cannot retry sync because app is syncing. Please waiting...";
+"Sync fail" = "Sync fail";

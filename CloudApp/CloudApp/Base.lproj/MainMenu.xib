@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Hanbiro_AutoSync" customModuleProvider="target"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="GJw-FL-Y55" userLabel="StatusMenuController" customClass="HCDStatusMenuController" customModule="Hanbiro_AutoSync" customModuleProvider="target">
+            <connections>
+                <outlet property="countFileNeedToSync" destination="rwR-kn-aLr" id="73d-J4-Cdm"/>
+                <outlet property="debugToolItem" destination="PdM-BX-YUc" id="v7w-DY-CVS"/>
+                <outlet property="loginMenuItem" destination="DPR-aq-8qo" id="dlZ-8p-cDi"/>
+                <outlet property="openCloudFolderItem" destination="IdP-cF-zd2" id="ORz-ss-h2v"/>
+                <outlet property="preferencesMenuItem" destination="Ljr-U6-GEQ" id="Q8X-O2-LjG"/>
+                <outlet property="processMenuItem" destination="vAx-Ai-c2u" id="rSH-J4-JaQ"/>
+                <outlet property="quitItem" destination="GMA-pb-HeK" id="JHU-fv-N6p"/>
+                <outlet property="statusMenu" destination="r4k-8E-0rK" id="GPp-eF-RbV"/>
+                <outlet property="syncCommandMenuItem" destination="JHU-6D-QDu" id="eUr-yQ-N2O"/>
+                <outlet property="syncErrorCountMenuItem" destination="3tR-5M-Z0e" id="LGX-dy-lmV"/>
+                <outlet property="syncPausedLabel" destination="nd5-0P-lFs" id="Gch-A3-Orf"/>
+                <outlet property="versionShowing" destination="lNJ-62-Ynu" id="iEb-IB-9YL"/>
+            </connections>
+        </customObject>
+        <menu id="r4k-8E-0rK">
+            <items>
+                <menuItem title="Version" id="lNJ-62-Ynu">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Login" id="DPR-aq-8qo">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="didClickLogin:" target="GJw-FL-Y55" id="3jk-RX-tWh"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="c7b-0y-Qga"/>
+                <menuItem title="Syncing paused" id="nd5-0P-lFs">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Process" id="vAx-Ai-c2u">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="CountSyncFile" id="rwR-kn-aLr">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Sync command" id="JHU-6D-QDu">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="DidClickChangeSyncStatus:" target="GJw-FL-Y55" id="quY-yE-BFl"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Files sync fail" id="3tR-5M-Z0e">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="showFileSyncFail:" target="GJw-FL-Y55" id="YKU-Ii-gz2"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="BCB-c7-b64"/>
+                <menuItem title="Debug Tools..." id="PdM-BX-YUc">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="didClickShowDebugTools:" target="GJw-FL-Y55" id="xRs-Qg-CdV"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Preferences..." id="Ljr-U6-GEQ">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="didClickPreferences:" target="GJw-FL-Y55" id="FRO-1c-Gpa"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Open Cloud Folder" id="IdP-cF-zd2">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="didClickShowFolderWithSender:" target="GJw-FL-Y55" id="vXv-J4-ccG"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Quit" id="GMA-pb-HeK">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="didClickQuitWithSender:" target="GJw-FL-Y55" id="5ru-x6-qf9"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="-161.5" y="107.5"/>
+        </menu>
+    </objects>
+</document>

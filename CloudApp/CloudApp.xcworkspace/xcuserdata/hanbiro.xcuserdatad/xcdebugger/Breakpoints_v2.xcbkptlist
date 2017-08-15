@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudApp/Manager and Helper/Event Executor/HCDEventExecutingManager.swift"
+            timestampString = "510572394.525342"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "run()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudApp/Manager and Helper/Event Executor/HCDEventExecutingManager.swift"
+            timestampString = "510572395.793026"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "run()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudApp/Manager and Helper/Event Executor/HCDEventExecutingManager.swift"
+            timestampString = "510572396.65921"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
+            landmarkName = "run()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hanbiro_AutoSync.HCDEventExecutingManager.(run () -&gt; ()).(closure #1).(closure #2)"
+                  moduleName = "Hanbiro AutoSync"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/DATA/PG/CLOUD_DISK_MAC/GIT/CloudApp/CloudApp/Manager%20and%20Helper/Event%20Executor/HCDEventExecutingManager.swift"
+                  timestampString = "510572408.789926"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "153"
+                  endingLineNumber = "153"
+                  offsetFromSymbolStart = "113">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hanbiro_AutoSync.HCDEventExecutingManager.(run () -&gt; ()).(closure #1).(closure #2).(implicit closure #1)"
+                  moduleName = "Hanbiro AutoSync"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/DATA/PG/CLOUD_DISK_MAC/GIT/CloudApp/CloudApp/Manager%20and%20Helper/Event%20Executor/HCDEventExecutingManager.swift"
+                  timestampString = "510572408.793405"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "153"
+                  endingLineNumber = "153"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudApp/Manager and Helper/Event Listener/HCDEventTakingManager.swift"
+            timestampString = "510572411.558327"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "commit(event:error:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudApp/Manager and Helper/Event Listener/HCDEventTakingManager.swift"
+            timestampString = "510572413.325608"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "commit(event:error:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hanbiro_AutoSync.HCDEventTakingManager.(commit in _29F7C6B76484216D751E2AC8A7727D77) (event : Hanbiro_AutoSync.HCDPEvent, error : Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
+                  moduleName = "Hanbiro AutoSync"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/DATA/PG/CLOUD_DISK_MAC/GIT/CloudApp/CloudApp/Manager%20and%20Helper/Event%20Listener/HCDEventTakingManager.swift"
+                  timestampString = "510572413.542923"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "143"
+                  endingLineNumber = "143"
+                  offsetFromSymbolStart = "558">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hanbiro_AutoSync.HCDEventTakingManager.((commit in _29F7C6B76484216D751E2AC8A7727D77) (event : Hanbiro_AutoSync.HCDPEvent, error : Swift.Optional&lt;Swift.Error&gt;) -&gt; ()).(closure #1)"
+                  moduleName = "Hanbiro AutoSync"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/DATA/PG/CLOUD_DISK_MAC/GIT/CloudApp/CloudApp/Manager%20and%20Helper/Event%20Listener/HCDEventTakingManager.swift"
+                  timestampString = "510572413.546662"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudApp/Manager and Helper/Event Executor/HCDEventExecutingManager.swift"
+            timestampString = "510572424.401436"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "commit(event:error:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudApp/Manager and Helper/Event Executor/HCDEventExecutingManager.swift"
+            timestampString = "510572699.286698"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "commit(event:error:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudApp/Manager and Helper/File List/HCDFileListManager.swift"
+            timestampString = "510572748.81651"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
+            landmarkName = "updateFileList(afterExecuteLocalEvent:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudApp/Manager and Helper/File List/HCDFileListManager.swift"
+            timestampString = "510572750.157933"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
+            landmarkName = "updateFileList(afterExecuteLocalEvent:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudApp/Manager and Helper/File List/HCDFileListManager.swift"
+            timestampString = "510572761.394463"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
+            landmarkName = "updateFileList(afterExecuteLocalEvent:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudApp/Manager and Helper/File List/HCDFileListManager.swift"
+            timestampString = "510572763.292105"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
+            landmarkName = "updateFileList(afterExecuteLocalEvent:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudApp/Library/Database/HCDEventDataManager.swift"
+            timestampString = "510572891.693046"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "commit(event:withErrorCode:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudApp/Manager and Helper/Utility/HCDUtilityHelper.swift"
+            timestampString = "512894540.92326"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "216"
+            endingLineNumber = "216"
+            landmarkName = "checkUpdateApp()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Hanbiro_AutoSync.HCDUtilityHelper.(checkUpdateApp () -&gt; ()).(closure #1)"
+                  moduleName = "Hanbiro AutoSync"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/DATA/PG/CLOUD_DISK_MAC/GIT/CloudApp/CloudApp/Manager%20and%20Helper/Utility/HCDUtilityHelper.swift"
+                  timestampString = "512894743.705494"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "216"
+                  endingLineNumber = "216"
+                  offsetFromSymbolStart = "914">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Hanbiro_AutoSync.HCDUtilityHelper.(checkUpdateApp () -&gt; ()).(closure #1)"
+                  moduleName = "Hanbiro AutoSync"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/DATA/PG/CLOUD_DISK_MAC/GIT/CloudApp/CloudApp/Manager%20and%20Helper/Utility/HCDUtilityHelper.swift"
+                  timestampString = "512894743.709529"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "216"
+                  endingLineNumber = "216"
+                  offsetFromSymbolStart = "1407">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

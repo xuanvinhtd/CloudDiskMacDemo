@@ -1,0 +1,56 @@
+project 'CloudApp.xcodeproj'
+
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'CloudAppHelper' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for CloudAppHelper
+
+end
+
+target 'MofficeCloudAppHelper' do
+    # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+    use_frameworks!
+    
+    # Pods for MofficeCloudAppHelper
+    
+end
+
+target 'Hanbiro AutoSync' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+pod 'Alamofire', '~> 4.0'
+pod 'PromiseKit','~> 4.0'
+pod 'SWXMLHash','~> 3.0'
+pod 'Locksmith'
+pod 'ReachabilitySwift','~> 3.0'
+pod 'SwiftyBeaver'
+pod 'MASPreferences'
+pod 'SwiftyUserDefaults'
+pod 'Fabric'
+pod 'Crashlytics'
+pod 'CryptoSwift'
+  # Pods for Hanbiro AutoSync
+
+end
+
+target 'Moffice AutoSync' do
+    # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+    use_frameworks!
+    pod 'Alamofire', '~> 4.0'
+    pod 'PromiseKit','~> 4.0'
+    pod 'SWXMLHash','~> 3.0'
+    pod 'Locksmith'
+    pod 'ReachabilitySwift','~> 3.0'
+    pod 'SwiftyBeaver'
+    pod 'MASPreferences'
+    pod 'SwiftyUserDefaults'
+    pod 'Fabric'
+    pod 'Crashlytics'
+    pod 'CryptoSwift'
+    # Pods for  Moffice AutoSync
+    
+end

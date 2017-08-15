@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>CloudAppHelper.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Hanbiro AutoSync.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>Moffice AutoSync.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>MofficeCloudAppHelper.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>924559661E4D9F5500D8553F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>927094231E514B4F007B3574</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9F3548BA1DFEAA5A004F2410</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9F37A55A1DDEED4300B5256B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9F37A5691DDEED4400B5256B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

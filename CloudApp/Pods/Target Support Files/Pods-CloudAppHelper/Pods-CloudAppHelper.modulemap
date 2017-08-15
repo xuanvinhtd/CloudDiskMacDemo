@@ -1,0 +1,6 @@
+framework module Pods_CloudAppHelper {
+  umbrella header "Pods-CloudAppHelper-umbrella.h"
+
+  export *
+  module * { export * }
+}

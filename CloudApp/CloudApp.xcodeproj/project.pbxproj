@@ -1,0 +1,1948 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07F5F7CA1A0597F15DA6DD00 /* Pods_CloudAppHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C633D0520AA2667020A3E437 /* Pods_CloudAppHelper.framework */; };
+		11CCF2D3ED91C6E3FDBC752A /* Pods_Hanbiro_AutoSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A2E6FA2FC6F763DB2ED769 /* Pods_Hanbiro_AutoSync.framework */; };
+		36684D19A280B815DA405C2F /* Pods_CloudAppHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C633D0520AA2667020A3E437 /* Pods_CloudAppHelper.framework */; };
+		46E6D157D71BB14E50709CEC /* Pods_Hanbiro_AutoSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A2E6FA2FC6F763DB2ED769 /* Pods_Hanbiro_AutoSync.framework */; };
+		8FE139520A72195CA9EF65CC /* Pods_Moffice_AutoSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D2B2EC313AF6CFD7180ADCF /* Pods_Moffice_AutoSync.framework */; };
+		921FAED01E487E7100DDA971 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921FAECE1E487E7100DDA971 /* Realm.framework */; };
+		921FAED11E487E7100DDA971 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921FAECF1E487E7100DDA971 /* RealmSwift.framework */; };
+		921FAED31E487E7900DDA971 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 921FAECE1E487E7100DDA971 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		921FAED51E487E7900DDA971 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 921FAECF1E487E7100DDA971 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		922A57151E5166CD00CFAE79 /* MofficeCloudAppHelper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 927094321E514B4F007B3574 /* MofficeCloudAppHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		924559691E4D9F5500D8553F /* HCDServerEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F45FC131DE815D10024163B /* HCDServerEvent.swift */; };
+		9245596A1E4D9F5500D8553F /* HCDDeviceInformationVT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0426351DE56A6B005F539D /* HCDDeviceInformationVT.swift */; };
+		9245596B1E4D9F5500D8553F /* HCDEventTakingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A86F1DED3B0F00697ECA /* HCDEventTakingManager.swift */; };
+		9245596C1E4D9F5500D8553F /* GetPrimaryMACAddressInSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB5D2DA1DE2AC0800C2CD3F /* GetPrimaryMACAddressInSwift.swift */; };
+		9245596D1E4D9F5500D8553F /* HCDKeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F31AFF81DE44A17005E1D7C /* HCDKeychainManager.swift */; };
+		9245596E1E4D9F5500D8553F /* HCDAboutPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1CCB2B1E0139270082E445 /* HCDAboutPreferencesViewController.swift */; };
+		9245596F1E4D9F5500D8553F /* HCDLocalFolderWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F31AFFF1DE543D5005E1D7C /* HCDLocalFolderWatcher.swift */; };
+		924559701E4D9F5500D8553F /* HCDItemBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4213D91DE68F6C0075A0F7 /* HCDItemBook.swift */; };
+		924559711E4D9F5500D8553F /* HCDLoginInformationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4213DD1DE690400075A0F7 /* HCDLoginInformationManager.swift */; };
+		924559721E4D9F5500D8553F /* HCDLocalEventListenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A8741DED593A00697ECA /* HCDLocalEventListenManager.swift */; };
+		924559731E4D9F5500D8553F /* HCDEventObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A86B1DED2E8B00697ECA /* HCDEventObject.swift */; };
+		924559741E4D9F5500D8553F /* HCDDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4213D31DE689AC0075A0F7 /* HCDDataManager.swift */; };
+		924559751E4D9F5500D8553F /* HCDEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F45FC111DE815D10024163B /* HCDEvent.swift */; };
+		924559761E4D9F5500D8553F /* HCDNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB5D2E21DE2D38200C2CD3F /* HCDNetworkManager.swift */; };
+		924559771E4D9F5500D8553F /* HCDLocalRawEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0426381DE56AB6005F539D /* HCDLocalRawEvent.swift */; };
+		924559781E4D9F5500D8553F /* HCDSyncTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68B4861DFFDBC800EEDEB2 /* HCDSyncTask.swift */; };
+		924559791E4D9F5500D8553F /* HCDDebugWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF0C03E1E0CE5B4001556F3 /* HCDDebugWindowController.swift */; };
+		9245597A1E4D9F5500D8553F /* HCDGeneralPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1CCB231E012E8F0082E445 /* HCDGeneralPreferencesViewController.swift */; };
+		9245597B1E4D9F5500D8553F /* HCDEventAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A8731DED593A00697ECA /* HCDEventAnalyzer.swift */; };
+		9245597C1E4D9F5500D8553F /* HCDPostRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB5D2E41DE3D56B00C2CD3F /* HCDPostRouter.swift */; };
+		9245597D1E4D9F5500D8553F /* HCDFileListComparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3705D61E2C77CA00F775E7 /* HCDFileListComparator.swift */; };
+		9245597E1E4D9F5500D8553F /* HCDError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0A1B301DE2867E00855F09 /* HCDError.swift */; };
+		9245597F1E4D9F5500D8553F /* HCDFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4213E41DE690400075A0F7 /* HCDFileManager.swift */; };
+		924559801E4D9F5500D8553F /* HCDRawItemFromServerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04263C1DE56B0D005F539D /* HCDRawItemFromServerList.swift */; };
+		924559811E4D9F5500D8553F /* HCDItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04263B1DE56B0D005F539D /* HCDItem.swift */; };
+		924559821E4D9F5500D8553F /* HCDItemObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4213D51DE689FB0075A0F7 /* HCDItemObject.swift */; };
+		924559831E4D9F5500D8553F /* HCDItemDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA76A3B1DE691C600C0C1D4 /* HCDItemDataManager.swift */; };
+		924559841E4D9F5500D8553F /* HCDLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F31AFF41DE3FD1B005E1D7C /* HCDLog.swift */; };
+		924559851E4D9F5500D8553F /* HCDNetworkDataConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB5D2E61DE3E3A800C2CD3F /* HCDNetworkDataConverter.swift */; };
+		924559861E4D9F5500D8553F /* HCDSyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3321761DF79D1100ADBC5C /* HCDSyncManager.swift */; };
+		924559871E4D9F5500D8553F /* HCDLocalEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F45FC121DE815D10024163B /* HCDLocalEvent.swift */; };
+		924559881E4D9F5500D8553F /* HCDLocalFileListUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA76A3F1DE6C78500C0C1D4 /* HCDLocalFileListUpdater.swift */; };
+		924559891E4D9F5500D8553F /* HCDLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB5D2D61DE2A06B00C2CD3F /* HCDLoginViewController.swift */; };
+		9245598A1E4D9F5500D8553F /* HCDEventAnalyzeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A8721DED593A00697ECA /* HCDEventAnalyzeHelper.swift */; };
+		9245598B1E4D9F5500D8553F /* HCDLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4213DE1DE690400075A0F7 /* HCDLoginManager.swift */; };
+		9245598C1E4D9F5500D8553F /* HCDAccountPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1CCB271E01352B0082E445 /* HCDAccountPreferencesViewController.swift */; };
+		9245598D1E4D9F5500D8553F /* HCDLoginCompleteInformationVT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0A1B341DE2867E00855F09 /* HCDLoginCompleteInformationVT.swift */; };
+		9245598E1E4D9F5500D8553F /* HCDLoginInputInformationVT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0A1B351DE2867E00855F09 /* HCDLoginInputInformationVT.swift */; };
+		9245598F1E4D9F5500D8553F /* HCDNetworkStatusInformationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F284A7D1DF951A000BE494B /* HCDNetworkStatusInformationManager.swift */; };
+		924559901E4D9F5500D8553F /* HCDStructExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0A1AF61DE2830B00855F09 /* HCDStructExtension.swift */; };
+		924559911E4D9F5500D8553F /* HCDStatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F37A5971DDF03F100B5256B /* HCDStatusMenuController.swift */; };
+		924559921E4D9F5500D8553F /* HCDPathHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4213E51DE690400075A0F7 /* HCDPathHelper.swift */; };
+		924559931E4D9F5500D8553F /* HCDNotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0A1B071DE2830B00855F09 /* HCDNotificationHelper.swift */; };
+		924559941E4D9F5500D8553F /* HCDServerRawEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F45FC141DE815D10024163B /* HCDServerRawEvent.swift */; };
+		924559951E4D9F5500D8553F /* HCDServerFileListUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4213E21DE690400075A0F7 /* HCDServerFileListUpdater.swift */; };
+		924559961E4D9F5500D8553F /* HCDFileListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA76A3D1DE6C5EE00C0C1D4 /* HCDFileListManager.swift */; };
+		924559971E4D9F5500D8553F /* HCDSyncState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68B4851DFFDBC800EEDEB2 /* HCDSyncState.swift */; };
+		924559981E4D9F5500D8553F /* AsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F284A771DF9004800BE494B /* AsynchronousOperation.swift */; };
+		924559991E4D9F5500D8553F /* HCDSelectSyncFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3750BC1E2DC6D000C26558 /* HCDSelectSyncFolder.swift */; };
+		9245599A1E4D9F5500D8553F /* HCDGlobalDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0A1B311DE2867E00855F09 /* HCDGlobalDefine.swift */; };
+		9245599B1E4D9F5500D8553F /* HCDEventExecutingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F959E701DEE79ED0095858D /* HCDEventExecutingManager.swift */; };
+		9245599C1E4D9F5500D8553F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F37A55E1DDEED4300B5256B /* AppDelegate.swift */; };
+		9245599D1E4D9F5500D8553F /* HCDEventNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35B5791E23813200AF3D2E /* HCDEventNote.swift */; };
+		9245599E1E4D9F5500D8553F /* HCDBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F37A5901DDF03F100B5256B /* HCDBaseViewController.swift */; };
+		9245599F1E4D9F5500D8553F /* HCDPreferencesWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEE9A4C1E01034800CB213D /* HCDPreferencesWindow.swift */; };
+		924559A01E4D9F5500D8553F /* HCDUtilityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4213E81DE690400075A0F7 /* HCDUtilityHelper.swift */; };
+		924559A11E4D9F5500D8553F /* HCDAnimatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0A1B1E1DE2840600855F09 /* HCDAnimatingView.swift */; };
+		924559A21E4D9F5500D8553F /* HCDFoundationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0A1AF51DE2830B00855F09 /* HCDFoundationExtension.swift */; };
+		924559A31E4D9F5500D8553F /* HCDServerEventListenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A8791DED598900697ECA /* HCDServerEventListenManager.swift */; };
+		924559A41E4D9F5500D8553F /* HCDEventDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A8691DED2C9500697ECA /* HCDEventDataManager.swift */; };
+		924559A51E4D9F5500D8553F /* FSEventWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F31AFFE1DE543D5005E1D7C /* FSEventWatcher.swift */; };
+		924559A61E4D9F5500D8553F /* HCDUserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4213E71DE690400075A0F7 /* HCDUserDefaultManager.swift */; };
+		924559A81E4D9F5500D8553F /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921FAECE1E487E7100DDA971 /* Realm.framework */; };
+		924559A91E4D9F5500D8553F /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE41B4B1DFF8B1C005302B6 /* ServiceManagement.framework */; };
+		924559AA1E4D9F5500D8553F /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921FAECF1E487E7100DDA971 /* RealmSwift.framework */; };
+		924559AD1E4D9F5500D8553F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F37A5601DDEED4300B5256B /* Assets.xcassets */; };
+		924559AE1E4D9F5500D8553F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F37A5621DDEED4300B5256B /* MainMenu.xib */; };
+		924559AF1E4D9F5500D8553F /* HCDAccountPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F52BD2B1E287B2900397D67 /* HCDAccountPreferencesViewController.xib */; };
+		924559B01E4D9F5500D8553F /* HCDGeneralPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F52BD261E287B1300397D67 /* HCDGeneralPreferencesViewController.xib */; };
+		924559B11E4D9F5500D8553F /* HCDLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FC10C561E307C07001F26F6 /* HCDLoginViewController.xib */; };
+		924559B31E4D9F5500D8553F /* HCDAboutPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F52BD301E287B4900397D67 /* HCDAboutPreferencesViewController.xib */; };
+		924559B41E4D9F5500D8553F /* HCDDebugWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F52BD211E287AAF00397D67 /* HCDDebugWindowController.xib */; };
+		924559B51E4D9F5500D8553F /* HCDSelectSyncFolder.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FC10C5F1E307C51001F26F6 /* HCDSelectSyncFolder.xib */; };
+		924559B71E4D9F5500D8553F /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 921FAECF1E487E7100DDA971 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		924559B81E4D9F5500D8553F /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 921FAECE1E487E7100DDA971 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		926B61811E600A6B008BB038 /* String+LocalizedBundletableName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B611EE1E56DA3F0062F6A0 /* String+LocalizedBundletableName.swift */; };
+		926B61821E600A6E008BB038 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B611F01E56DA630062F6A0 /* Localize.swift */; };
+		927094261E514B4F007B3574 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3548C11DFEAA5A004F2410 /* main.m */; };
+		927094271E514B4F007B3574 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3548BE1DFEAA5A004F2410 /* AppDelegate.m */; };
+		9270942B1E514B4F007B3574 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F3548C31DFEAA5A004F2410 /* Assets.xcassets */; };
+		9270942C1E514B4F007B3574 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F3548C51DFEAA5A004F2410 /* MainMenu.xib */; };
+		928C25491E65075D00881E17 /* HCDAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C25481E65075D00881E17 /* HCDAlert.swift */; };
+		928C254A1E65075D00881E17 /* HCDAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C25481E65075D00881E17 /* HCDAlert.swift */; };
+		92B611EF1E56DA3F0062F6A0 /* String+LocalizedBundletableName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B611EE1E56DA3F0062F6A0 /* String+LocalizedBundletableName.swift */; };
+		92B611F11E56DA630062F6A0 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B611F01E56DA630062F6A0 /* Localize.swift */; };
+		92B612071E56E7550062F6A0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92B611FF1E56E7550062F6A0 /* Localizable.strings */; };
+		92B612081E56E7550062F6A0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92B612021E56E7550062F6A0 /* Localizable.strings */; };
+		92B612091E56E7550062F6A0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92B612051E56E7550062F6A0 /* Localizable.strings */; };
+		92C052B11E60138F00565457 /* HCDSyncFailsWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C052B01E60138F00565457 /* HCDSyncFailsWindowController.xib */; };
+		92C052B21E60138F00565457 /* HCDSyncFailsWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C052B01E60138F00565457 /* HCDSyncFailsWindowController.xib */; };
+		92C052B41E6013AB00565457 /* HCDSyncFailsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C052B31E6013AB00565457 /* HCDSyncFailsWindowController.swift */; };
+		92C052B51E6013AB00565457 /* HCDSyncFailsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C052B31E6013AB00565457 /* HCDSyncFailsWindowController.swift */; };
+		9F0426361DE56A6B005F539D /* HCDDeviceInformationVT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0426351DE56A6B005F539D /* HCDDeviceInformationVT.swift */; };
+		9F0426391DE56AB6005F539D /* HCDLocalRawEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0426381DE56AB6005F539D /* HCDLocalRawEvent.swift */; };
+		9F04263D1DE56B0D005F539D /* HCDItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04263B1DE56B0D005F539D /* HCDItem.swift */; };
+		9F04263E1DE56B0D005F539D /* HCDRawItemFromServerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04263C1DE56B0D005F539D /* HCDRawItemFromServerList.swift */; };
+		9F0A1B101DE2830B00855F09 /* HCDFoundationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0A1AF51DE2830B00855F09 /* HCDFoundationExtension.swift */; };
+		9F0A1B111DE2830B00855F09 /* HCDStructExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0A1AF61DE2830B00855F09 /* HCDStructExtension.swift */; };
+		9F0A1B1C1DE2830B00855F09 /* HCDNotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0A1B071DE2830B00855F09 /* HCDNotificationHelper.swift */; };
+		9F0A1B1F1DE2840600855F09 /* HCDAnimatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0A1B1E1DE2840600855F09 /* HCDAnimatingView.swift */; };
+		9F0A1B4D1DE2867E00855F09 /* HCDError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0A1B301DE2867E00855F09 /* HCDError.swift */; };
+		9F0A1B4E1DE2867E00855F09 /* HCDGlobalDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0A1B311DE2867E00855F09 /* HCDGlobalDefine.swift */; };
+		9F0A1B501DE2867E00855F09 /* HCDLoginCompleteInformationVT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0A1B341DE2867E00855F09 /* HCDLoginCompleteInformationVT.swift */; };
+		9F0A1B511DE2867E00855F09 /* HCDLoginInputInformationVT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0A1B351DE2867E00855F09 /* HCDLoginInputInformationVT.swift */; };
+		9F1CCB251E012E8F0082E445 /* HCDGeneralPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1CCB231E012E8F0082E445 /* HCDGeneralPreferencesViewController.swift */; };
+		9F1CCB291E01352B0082E445 /* HCDAccountPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1CCB271E01352B0082E445 /* HCDAccountPreferencesViewController.swift */; };
+		9F1CCB2D1E0139270082E445 /* HCDAboutPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1CCB2B1E0139270082E445 /* HCDAboutPreferencesViewController.swift */; };
+		9F284A781DF9004800BE494B /* AsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F284A771DF9004800BE494B /* AsynchronousOperation.swift */; };
+		9F284A7E1DF951A000BE494B /* HCDNetworkStatusInformationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F284A7D1DF951A000BE494B /* HCDNetworkStatusInformationManager.swift */; };
+		9F31AFF51DE3FD1B005E1D7C /* HCDLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F31AFF41DE3FD1B005E1D7C /* HCDLog.swift */; };
+		9F31AFF91DE44A17005E1D7C /* HCDKeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F31AFF81DE44A17005E1D7C /* HCDKeychainManager.swift */; };
+		9F31B0001DE543D5005E1D7C /* FSEventWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F31AFFE1DE543D5005E1D7C /* FSEventWatcher.swift */; };
+		9F31B0011DE543D5005E1D7C /* HCDLocalFolderWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F31AFFF1DE543D5005E1D7C /* HCDLocalFolderWatcher.swift */; };
+		9F3321771DF79D1100ADBC5C /* HCDSyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3321761DF79D1100ADBC5C /* HCDSyncManager.swift */; };
+		9F3548BF1DFEAA5A004F2410 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3548BE1DFEAA5A004F2410 /* AppDelegate.m */; };
+		9F3548C21DFEAA5A004F2410 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3548C11DFEAA5A004F2410 /* main.m */; };
+		9F3548C41DFEAA5A004F2410 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F3548C31DFEAA5A004F2410 /* Assets.xcassets */; };
+		9F3548C71DFEAA5A004F2410 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F3548C51DFEAA5A004F2410 /* MainMenu.xib */; };
+		9F3548CC1DFEAA7D004F2410 /* CloudAppHelper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F3548BB1DFEAA5A004F2410 /* CloudAppHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9F35B57A1E23813200AF3D2E /* HCDEventNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35B5791E23813200AF3D2E /* HCDEventNote.swift */; };
+		9F3705D71E2C77CA00F775E7 /* HCDFileListComparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3705D61E2C77CA00F775E7 /* HCDFileListComparator.swift */; };
+		9F3750BE1E2DC6D000C26558 /* HCDSelectSyncFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3750BC1E2DC6D000C26558 /* HCDSelectSyncFolder.swift */; };
+		9F37A55F1DDEED4300B5256B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F37A55E1DDEED4300B5256B /* AppDelegate.swift */; };
+		9F37A5611DDEED4300B5256B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F37A5601DDEED4300B5256B /* Assets.xcassets */; };
+		9F37A5641DDEED4300B5256B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F37A5621DDEED4300B5256B /* MainMenu.xib */; };
+		9F37A56F1DDEED4400B5256B /* CloudAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F37A56E1DDEED4400B5256B /* CloudAppTests.swift */; };
+		9F37A5981DDF03F100B5256B /* HCDBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F37A5901DDF03F100B5256B /* HCDBaseViewController.swift */; };
+		9F37A59C1DDF03F100B5256B /* HCDStatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F37A5971DDF03F100B5256B /* HCDStatusMenuController.swift */; };
+		9F4213D41DE689AC0075A0F7 /* HCDDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4213D31DE689AC0075A0F7 /* HCDDataManager.swift */; };
+		9F4213D61DE689FB0075A0F7 /* HCDItemObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4213D51DE689FB0075A0F7 /* HCDItemObject.swift */; };
+		9F4213DA1DE68F6C0075A0F7 /* HCDItemBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4213D91DE68F6C0075A0F7 /* HCDItemBook.swift */; };
+		9F4213E91DE690400075A0F7 /* HCDLoginInformationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4213DD1DE690400075A0F7 /* HCDLoginInformationManager.swift */; };
+		9F4213EA1DE690400075A0F7 /* HCDLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4213DE1DE690400075A0F7 /* HCDLoginManager.swift */; };
+		9F4213EC1DE690400075A0F7 /* HCDServerFileListUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4213E21DE690400075A0F7 /* HCDServerFileListUpdater.swift */; };
+		9F4213ED1DE690400075A0F7 /* HCDFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4213E41DE690400075A0F7 /* HCDFileManager.swift */; };
+		9F4213EE1DE690400075A0F7 /* HCDPathHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4213E51DE690400075A0F7 /* HCDPathHelper.swift */; };
+		9F4213EF1DE690400075A0F7 /* HCDUserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4213E71DE690400075A0F7 /* HCDUserDefaultManager.swift */; };
+		9F4213F01DE690400075A0F7 /* HCDUtilityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4213E81DE690400075A0F7 /* HCDUtilityHelper.swift */; };
+		9F44A86A1DED2C9500697ECA /* HCDEventDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A8691DED2C9500697ECA /* HCDEventDataManager.swift */; };
+		9F44A86C1DED2E8B00697ECA /* HCDEventObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A86B1DED2E8B00697ECA /* HCDEventObject.swift */; };
+		9F44A8701DED3B0F00697ECA /* HCDEventTakingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A86F1DED3B0F00697ECA /* HCDEventTakingManager.swift */; };
+		9F44A8751DED593A00697ECA /* HCDEventAnalyzeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A8721DED593A00697ECA /* HCDEventAnalyzeHelper.swift */; };
+		9F44A8761DED593A00697ECA /* HCDEventAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A8731DED593A00697ECA /* HCDEventAnalyzer.swift */; };
+		9F44A8771DED593A00697ECA /* HCDLocalEventListenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A8741DED593A00697ECA /* HCDLocalEventListenManager.swift */; };
+		9F44A87A1DED598900697ECA /* HCDServerEventListenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A8791DED598900697ECA /* HCDServerEventListenManager.swift */; };
+		9F45FC151DE815D10024163B /* HCDEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F45FC111DE815D10024163B /* HCDEvent.swift */; };
+		9F45FC161DE815D10024163B /* HCDLocalEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F45FC121DE815D10024163B /* HCDLocalEvent.swift */; };
+		9F45FC171DE815D10024163B /* HCDServerEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F45FC131DE815D10024163B /* HCDServerEvent.swift */; };
+		9F45FC181DE815D10024163B /* HCDServerRawEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F45FC141DE815D10024163B /* HCDServerRawEvent.swift */; };
+		9F52BD1F1E287AAF00397D67 /* HCDDebugWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F52BD211E287AAF00397D67 /* HCDDebugWindowController.xib */; };
+		9F52BD241E287B1300397D67 /* HCDGeneralPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F52BD261E287B1300397D67 /* HCDGeneralPreferencesViewController.xib */; };
+		9F52BD291E287B2900397D67 /* HCDAccountPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F52BD2B1E287B2900397D67 /* HCDAccountPreferencesViewController.xib */; };
+		9F52BD2E1E287B4900397D67 /* HCDAboutPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F52BD301E287B4900397D67 /* HCDAboutPreferencesViewController.xib */; };
+		9F68B4871DFFDBC800EEDEB2 /* HCDSyncState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68B4851DFFDBC800EEDEB2 /* HCDSyncState.swift */; };
+		9F68B4881DFFDBC800EEDEB2 /* HCDSyncTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68B4861DFFDBC800EEDEB2 /* HCDSyncTask.swift */; };
+		9F959E711DEE79ED0095858D /* HCDEventExecutingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F959E701DEE79ED0095858D /* HCDEventExecutingManager.swift */; };
+		9FA76A3C1DE691C600C0C1D4 /* HCDItemDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA76A3B1DE691C600C0C1D4 /* HCDItemDataManager.swift */; };
+		9FA76A3E1DE6C5EE00C0C1D4 /* HCDFileListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA76A3D1DE6C5EE00C0C1D4 /* HCDFileListManager.swift */; };
+		9FA76A401DE6C78500C0C1D4 /* HCDLocalFileListUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA76A3F1DE6C78500C0C1D4 /* HCDLocalFileListUpdater.swift */; };
+		9FB5D2D81DE2A06B00C2CD3F /* HCDLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB5D2D61DE2A06B00C2CD3F /* HCDLoginViewController.swift */; };
+		9FB5D2DB1DE2AC0800C2CD3F /* GetPrimaryMACAddressInSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB5D2DA1DE2AC0800C2CD3F /* GetPrimaryMACAddressInSwift.swift */; };
+		9FB5D2E31DE2D38200C2CD3F /* HCDNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB5D2E21DE2D38200C2CD3F /* HCDNetworkManager.swift */; };
+		9FB5D2E51DE3D56B00C2CD3F /* HCDPostRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB5D2E41DE3D56B00C2CD3F /* HCDPostRouter.swift */; };
+		9FB5D2E71DE3E3A800C2CD3F /* HCDNetworkDataConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB5D2E61DE3E3A800C2CD3F /* HCDNetworkDataConverter.swift */; };
+		9FC10C541E307C07001F26F6 /* HCDLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FC10C561E307C07001F26F6 /* HCDLoginViewController.xib */; };
+		9FC10C5D1E307C51001F26F6 /* HCDSelectSyncFolder.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FC10C5F1E307C51001F26F6 /* HCDSelectSyncFolder.xib */; };
+		9FE41B4C1DFF8B1C005302B6 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE41B4B1DFF8B1C005302B6 /* ServiceManagement.framework */; };
+		9FEE9A4E1E01034800CB213D /* HCDPreferencesWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEE9A4C1E01034800CB213D /* HCDPreferencesWindow.swift */; };
+		9FF0C0401E0CE5B4001556F3 /* HCDDebugWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF0C03E1E0CE5B4001556F3 /* HCDDebugWindowController.swift */; };
+		BB3381F0D47C5F214824156F /* Pods_MofficeCloudAppHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD17B55B6AADB8BBB35217A /* Pods_MofficeCloudAppHelper.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F37A56B1DDEED4400B5256B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F37A5531DDEED4300B5256B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F37A55A1DDEED4300B5256B;
+			remoteInfo = CloudApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		924559B61E4D9F5500D8553F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				924559B71E4D9F5500D8553F /* RealmSwift.framework in Embed Frameworks */,
+				924559B81E4D9F5500D8553F /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		924559B91E4D9F5500D8553F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				922A57151E5166CD00CFAE79 /* MofficeCloudAppHelper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F0A1B791DE2882600855F09 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				921FAED51E487E7900DDA971 /* RealmSwift.framework in Embed Frameworks */,
+				921FAED31E487E7900DDA971 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F3548B51DFEA9CF004F2410 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				9F3548CC1DFEAA7D004F2410 /* CloudAppHelper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		19DB1B6EE18271C2A946B218 /* Pods-Moffice AutoSync.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moffice AutoSync.release.xcconfig"; path = "Pods/Target Support Files/Pods-Moffice AutoSync/Pods-Moffice AutoSync.release.xcconfig"; sourceTree = "<group>"; };
+		5BD17B55B6AADB8BBB35217A /* Pods_MofficeCloudAppHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MofficeCloudAppHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E09602E821BED4AB5DFFA7E /* Pods-CloudAppHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudAppHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudAppHelper/Pods-CloudAppHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		6816A6980DD4AEE4E8C91553 /* Pods-MofficeCloudAppHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MofficeCloudAppHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MofficeCloudAppHelper/Pods-MofficeCloudAppHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		777EB4CA6E804FFED4E04A75 /* Pods-MofficeCloudAppHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MofficeCloudAppHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-MofficeCloudAppHelper/Pods-MofficeCloudAppHelper.release.xcconfig"; sourceTree = "<group>"; };
+		7D2B2EC313AF6CFD7180ADCF /* Pods_Moffice_AutoSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moffice_AutoSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86C2063DD2E3760F81D98399 /* Pods-Hanbiro AutoSync.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hanbiro AutoSync.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hanbiro AutoSync/Pods-Hanbiro AutoSync.release.xcconfig"; sourceTree = "<group>"; };
+		921FAECE1E487E7100DDA971 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		921FAECF1E487E7100DDA971 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		924559C11E4D9F5500D8553F /* Moffice AutoSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moffice AutoSync.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		924559C21E4D9F5600D8553F /* MofficeAutoSync.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MofficeAutoSync.plist; path = /Volumes/DATA/PG/CLOUD_DISK_MAC/GIT/CloudApp/MofficeAutoSync.plist; sourceTree = "<absolute>"; };
+		924559C31E4DB87C00D8553F /* MofficeCloudApp.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = MofficeCloudApp.entitlements; sourceTree = "<group>"; };
+		927094321E514B4F007B3574 /* MofficeCloudAppHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MofficeCloudAppHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		927094341E514EFC007B3574 /* MofficeCloudAppHelper.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = MofficeCloudAppHelper.entitlements; sourceTree = "<group>"; };
+		927094351E514F5C007B3574 /* MofficeInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MofficeInfo.plist; sourceTree = "<group>"; };
+		928C25481E65075D00881E17 /* HCDAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDAlert.swift; sourceTree = "<group>"; };
+		92B611EE1E56DA3F0062F6A0 /* String+LocalizedBundletableName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+LocalizedBundletableName.swift"; sourceTree = "<group>"; };
+		92B611F01E56DA630062F6A0 /* Localize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
+		92B612001E56E7550062F6A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
+		92B612031E56E7550062F6A0 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = Localizable.strings; sourceTree = "<group>"; };
+		92B612061E56E7550062F6A0 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = Localizable.strings; sourceTree = "<group>"; };
+		92C052B01E60138F00565457 /* HCDSyncFailsWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCDSyncFailsWindowController.xib; sourceTree = "<group>"; };
+		92C052B31E6013AB00565457 /* HCDSyncFailsWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDSyncFailsWindowController.swift; sourceTree = "<group>"; };
+		9C7A249B0436623BDC7769AD /* Pods-CloudAppHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudAppHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudAppHelper/Pods-CloudAppHelper.release.xcconfig"; sourceTree = "<group>"; };
+		9F0426351DE56A6B005F539D /* HCDDeviceInformationVT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDDeviceInformationVT.swift; sourceTree = "<group>"; };
+		9F0426381DE56AB6005F539D /* HCDLocalRawEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDLocalRawEvent.swift; sourceTree = "<group>"; };
+		9F04263B1DE56B0D005F539D /* HCDItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDItem.swift; sourceTree = "<group>"; };
+		9F04263C1DE56B0D005F539D /* HCDRawItemFromServerList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDRawItemFromServerList.swift; sourceTree = "<group>"; };
+		9F0A1AF51DE2830B00855F09 /* HCDFoundationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDFoundationExtension.swift; sourceTree = "<group>"; };
+		9F0A1AF61DE2830B00855F09 /* HCDStructExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDStructExtension.swift; sourceTree = "<group>"; };
+		9F0A1B071DE2830B00855F09 /* HCDNotificationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDNotificationHelper.swift; sourceTree = "<group>"; };
+		9F0A1B1E1DE2840600855F09 /* HCDAnimatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDAnimatingView.swift; sourceTree = "<group>"; };
+		9F0A1B301DE2867E00855F09 /* HCDError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDError.swift; sourceTree = "<group>"; };
+		9F0A1B311DE2867E00855F09 /* HCDGlobalDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDGlobalDefine.swift; sourceTree = "<group>"; };
+		9F0A1B341DE2867E00855F09 /* HCDLoginCompleteInformationVT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDLoginCompleteInformationVT.swift; sourceTree = "<group>"; };
+		9F0A1B351DE2867E00855F09 /* HCDLoginInputInformationVT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDLoginInputInformationVT.swift; sourceTree = "<group>"; };
+		9F1CCB231E012E8F0082E445 /* HCDGeneralPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDGeneralPreferencesViewController.swift; sourceTree = "<group>"; };
+		9F1CCB271E01352B0082E445 /* HCDAccountPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDAccountPreferencesViewController.swift; sourceTree = "<group>"; };
+		9F1CCB2B1E0139270082E445 /* HCDAboutPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDAboutPreferencesViewController.swift; sourceTree = "<group>"; };
+		9F284A771DF9004800BE494B /* AsynchronousOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AsynchronousOperation.swift; path = Networking/AsynchronousOperation.swift; sourceTree = "<group>"; };
+		9F284A7D1DF951A000BE494B /* HCDNetworkStatusInformationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCDNetworkStatusInformationManager.swift; path = Networking/HCDNetworkStatusInformationManager.swift; sourceTree = "<group>"; };
+		9F2FD5A01DE28C360034A6CA /* CloudApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CloudApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		9F31AFF41DE3FD1B005E1D7C /* HCDLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDLog.swift; sourceTree = "<group>"; };
+		9F31AFF81DE44A17005E1D7C /* HCDKeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDKeychainManager.swift; sourceTree = "<group>"; };
+		9F31AFFE1DE543D5005E1D7C /* FSEventWatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSEventWatcher.swift; sourceTree = "<group>"; };
+		9F31AFFF1DE543D5005E1D7C /* HCDLocalFolderWatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDLocalFolderWatcher.swift; sourceTree = "<group>"; };
+		9F3321761DF79D1100ADBC5C /* HCDSyncManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDSyncManager.swift; sourceTree = "<group>"; };
+		9F3548BB1DFEAA5A004F2410 /* CloudAppHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudAppHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F3548BD1DFEAA5A004F2410 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9F3548BE1DFEAA5A004F2410 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9F3548C11DFEAA5A004F2410 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9F3548C31DFEAA5A004F2410 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F3548C61DFEAA5A004F2410 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9F3548C81DFEAA5A004F2410 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F35B5791E23813200AF3D2E /* HCDEventNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDEventNote.swift; sourceTree = "<group>"; };
+		9F3705D61E2C77CA00F775E7 /* HCDFileListComparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDFileListComparator.swift; sourceTree = "<group>"; };
+		9F3750BC1E2DC6D000C26558 /* HCDSelectSyncFolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDSelectSyncFolder.swift; sourceTree = "<group>"; };
+		9F37A55B1DDEED4300B5256B /* Hanbiro AutoSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hanbiro AutoSync.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F37A55E1DDEED4300B5256B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
+		9F37A5601DDEED4300B5256B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F37A5631DDEED4300B5256B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9F37A5651DDEED4300B5256B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		9F37A56A1DDEED4400B5256B /* CloudAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F37A56E1DDEED4400B5256B /* CloudAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudAppTests.swift; sourceTree = "<group>"; };
+		9F37A5701DDEED4400B5256B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F37A5901DDF03F100B5256B /* HCDBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDBaseViewController.swift; sourceTree = "<group>"; };
+		9F37A5971DDF03F100B5256B /* HCDStatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDStatusMenuController.swift; sourceTree = "<group>"; };
+		9F4213D31DE689AC0075A0F7 /* HCDDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDDataManager.swift; sourceTree = "<group>"; };
+		9F4213D51DE689FB0075A0F7 /* HCDItemObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDItemObject.swift; sourceTree = "<group>"; };
+		9F4213D91DE68F6C0075A0F7 /* HCDItemBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDItemBook.swift; sourceTree = "<group>"; };
+		9F4213DD1DE690400075A0F7 /* HCDLoginInformationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDLoginInformationManager.swift; sourceTree = "<group>"; };
+		9F4213DE1DE690400075A0F7 /* HCDLoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDLoginManager.swift; sourceTree = "<group>"; };
+		9F4213E21DE690400075A0F7 /* HCDServerFileListUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDServerFileListUpdater.swift; sourceTree = "<group>"; };
+		9F4213E41DE690400075A0F7 /* HCDFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDFileManager.swift; sourceTree = "<group>"; };
+		9F4213E51DE690400075A0F7 /* HCDPathHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDPathHelper.swift; sourceTree = "<group>"; };
+		9F4213E71DE690400075A0F7 /* HCDUserDefaultManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDUserDefaultManager.swift; sourceTree = "<group>"; };
+		9F4213E81DE690400075A0F7 /* HCDUtilityHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDUtilityHelper.swift; sourceTree = "<group>"; };
+		9F44A8691DED2C9500697ECA /* HCDEventDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDEventDataManager.swift; sourceTree = "<group>"; };
+		9F44A86B1DED2E8B00697ECA /* HCDEventObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDEventObject.swift; sourceTree = "<group>"; };
+		9F44A86F1DED3B0F00697ECA /* HCDEventTakingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDEventTakingManager.swift; sourceTree = "<group>"; };
+		9F44A8721DED593A00697ECA /* HCDEventAnalyzeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDEventAnalyzeHelper.swift; sourceTree = "<group>"; };
+		9F44A8731DED593A00697ECA /* HCDEventAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDEventAnalyzer.swift; sourceTree = "<group>"; };
+		9F44A8741DED593A00697ECA /* HCDLocalEventListenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDLocalEventListenManager.swift; sourceTree = "<group>"; };
+		9F44A8791DED598900697ECA /* HCDServerEventListenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDServerEventListenManager.swift; sourceTree = "<group>"; };
+		9F45FC111DE815D10024163B /* HCDEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDEvent.swift; sourceTree = "<group>"; };
+		9F45FC121DE815D10024163B /* HCDLocalEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDLocalEvent.swift; sourceTree = "<group>"; };
+		9F45FC131DE815D10024163B /* HCDServerEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDServerEvent.swift; sourceTree = "<group>"; };
+		9F45FC141DE815D10024163B /* HCDServerRawEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDServerRawEvent.swift; sourceTree = "<group>"; };
+		9F4EC6961E1E213E00A3306C /* CloudApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudApp.entitlements; sourceTree = "<group>"; };
+		9F52BD201E287AAF00397D67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HCDDebugWindowController.xib; sourceTree = "<group>"; };
+		9F52BD251E287B1300397D67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HCDGeneralPreferencesViewController.xib; sourceTree = "<group>"; };
+		9F52BD2A1E287B2900397D67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HCDAccountPreferencesViewController.xib; sourceTree = "<group>"; };
+		9F52BD2F1E287B4900397D67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HCDAboutPreferencesViewController.xib; sourceTree = "<group>"; };
+		9F68B4851DFFDBC800EEDEB2 /* HCDSyncState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDSyncState.swift; sourceTree = "<group>"; };
+		9F68B4861DFFDBC800EEDEB2 /* HCDSyncTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDSyncTask.swift; sourceTree = "<group>"; };
+		9F959E701DEE79ED0095858D /* HCDEventExecutingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDEventExecutingManager.swift; sourceTree = "<group>"; };
+		9FA76A3B1DE691C600C0C1D4 /* HCDItemDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDItemDataManager.swift; sourceTree = "<group>"; };
+		9FA76A3D1DE6C5EE00C0C1D4 /* HCDFileListManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDFileListManager.swift; sourceTree = "<group>"; };
+		9FA76A3F1DE6C78500C0C1D4 /* HCDLocalFileListUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDLocalFileListUpdater.swift; sourceTree = "<group>"; };
+		9FB5D2D61DE2A06B00C2CD3F /* HCDLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDLoginViewController.swift; sourceTree = "<group>"; };
+		9FB5D2DA1DE2AC0800C2CD3F /* GetPrimaryMACAddressInSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPrimaryMACAddressInSwift.swift; sourceTree = "<group>"; };
+		9FB5D2E21DE2D38200C2CD3F /* HCDNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCDNetworkManager.swift; path = Networking/HCDNetworkManager.swift; sourceTree = "<group>"; };
+		9FB5D2E41DE3D56B00C2CD3F /* HCDPostRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCDPostRouter.swift; path = Networking/HCDPostRouter.swift; sourceTree = "<group>"; };
+		9FB5D2E61DE3E3A800C2CD3F /* HCDNetworkDataConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCDNetworkDataConverter.swift; path = Networking/HCDNetworkDataConverter.swift; sourceTree = "<group>"; };
+		9FC10C451E306C6F001F26F6 /* CloudAppHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudAppHelper.entitlements; sourceTree = "<group>"; };
+		9FC10C551E307C07001F26F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HCDLoginViewController.xib; sourceTree = "<group>"; };
+		9FC10C5E1E307C51001F26F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HCDSelectSyncFolder.xib; sourceTree = "<group>"; };
+		9FE41B4B1DFF8B1C005302B6 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		9FEE9A4C1E01034800CB213D /* HCDPreferencesWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDPreferencesWindow.swift; sourceTree = "<group>"; };
+		9FF0C03E1E0CE5B4001556F3 /* HCDDebugWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDDebugWindowController.swift; sourceTree = "<group>"; };
+		C550E188861D217BC8D85282 /* Pods-Hanbiro AutoSync.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hanbiro AutoSync.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hanbiro AutoSync/Pods-Hanbiro AutoSync.debug.xcconfig"; sourceTree = "<group>"; };
+		C633D0520AA2667020A3E437 /* Pods_CloudAppHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudAppHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF38AF1E89D2C1D79EE8DA30 /* Pods-Moffice AutoSync.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moffice AutoSync.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Moffice AutoSync/Pods-Moffice AutoSync.debug.xcconfig"; sourceTree = "<group>"; };
+		F7A2E6FA2FC6F763DB2ED769 /* Pods_Hanbiro_AutoSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hanbiro_AutoSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		924559A71E4D9F5500D8553F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924559A81E4D9F5500D8553F /* Realm.framework in Frameworks */,
+				924559A91E4D9F5500D8553F /* ServiceManagement.framework in Frameworks */,
+				924559AA1E4D9F5500D8553F /* RealmSwift.framework in Frameworks */,
+				8FE139520A72195CA9EF65CC /* Pods_Moffice_AutoSync.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		927094281E514B4F007B3574 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB3381F0D47C5F214824156F /* Pods_MofficeCloudAppHelper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F3548B81DFEAA5A004F2410 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36684D19A280B815DA405C2F /* Pods_CloudAppHelper.framework in Frameworks */,
+				07F5F7CA1A0597F15DA6DD00 /* Pods_CloudAppHelper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F37A5581DDEED4300B5256B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				921FAED01E487E7100DDA971 /* Realm.framework in Frameworks */,
+				9FE41B4C1DFF8B1C005302B6 /* ServiceManagement.framework in Frameworks */,
+				921FAED11E487E7100DDA971 /* RealmSwift.framework in Frameworks */,
+				46E6D157D71BB14E50709CEC /* Pods_Hanbiro_AutoSync.framework in Frameworks */,
+				11CCF2D3ED91C6E3FDBC752A /* Pods_Hanbiro_AutoSync.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F37A5671DDEED4400B5256B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92B611FE1E56E7550062F6A0 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				92B611FF1E56E7550062F6A0 /* Localizable.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		92B612011E56E7550062F6A0 /* ja.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				92B612021E56E7550062F6A0 /* Localizable.strings */,
+			);
+			path = ja.lproj;
+			sourceTree = "<group>";
+		};
+		92B612041E56E7550062F6A0 /* ko.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				92B612051E56E7550062F6A0 /* Localizable.strings */,
+			);
+			path = ko.lproj;
+			sourceTree = "<group>";
+		};
+		92C052AF1E60126500565457 /* SyncFail */ = {
+			isa = PBXGroup;
+			children = (
+				92C052B01E60138F00565457 /* HCDSyncFailsWindowController.xib */,
+				92C052B31E6013AB00565457 /* HCDSyncFailsWindowController.swift */,
+			);
+			path = SyncFail;
+			sourceTree = "<group>";
+		};
+		9CE95691D8E16E4017C4A719 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E09602E821BED4AB5DFFA7E /* Pods-CloudAppHelper.debug.xcconfig */,
+				9C7A249B0436623BDC7769AD /* Pods-CloudAppHelper.release.xcconfig */,
+				C550E188861D217BC8D85282 /* Pods-Hanbiro AutoSync.debug.xcconfig */,
+				86C2063DD2E3760F81D98399 /* Pods-Hanbiro AutoSync.release.xcconfig */,
+				DF38AF1E89D2C1D79EE8DA30 /* Pods-Moffice AutoSync.debug.xcconfig */,
+				19DB1B6EE18271C2A946B218 /* Pods-Moffice AutoSync.release.xcconfig */,
+				6816A6980DD4AEE4E8C91553 /* Pods-MofficeCloudAppHelper.debug.xcconfig */,
+				777EB4CA6E804FFED4E04A75 /* Pods-MofficeCloudAppHelper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9F0426371DE56AB6005F539D /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				9F45FC111DE815D10024163B /* HCDEvent.swift */,
+				9F45FC121DE815D10024163B /* HCDLocalEvent.swift */,
+				9F45FC131DE815D10024163B /* HCDServerEvent.swift */,
+				9F45FC141DE815D10024163B /* HCDServerRawEvent.swift */,
+				9F0426381DE56AB6005F539D /* HCDLocalRawEvent.swift */,
+				9F44A86B1DED2E8B00697ECA /* HCDEventObject.swift */,
+				9F35B5791E23813200AF3D2E /* HCDEventNote.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		9F04263A1DE56B0D005F539D /* File List */ = {
+			isa = PBXGroup;
+			children = (
+				9F4213D91DE68F6C0075A0F7 /* HCDItemBook.swift */,
+				9F4213D51DE689FB0075A0F7 /* HCDItemObject.swift */,
+				9F04263B1DE56B0D005F539D /* HCDItem.swift */,
+				9F04263C1DE56B0D005F539D /* HCDRawItemFromServerList.swift */,
+			);
+			path = "File List";
+			sourceTree = "<group>";
+		};
+		9F0A1AE91DE2815000855F09 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				921FAECE1E487E7100DDA971 /* Realm.framework */,
+				921FAECF1E487E7100DDA971 /* RealmSwift.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		9F0A1AEA1DE2830B00855F09 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				9F4213D21DE689580075A0F7 /* Database */,
+				9F31AFFD1DE543D5005E1D7C /* Folder Monitor */,
+				9FB5D2E11DE2D35000C2CD3F /* Networking */,
+				9F0A1AF41DE2830B00855F09 /* Extension */,
+				9F0A1B051DE2830B00855F09 /* Utility */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		9F0A1AF41DE2830B00855F09 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				92B611F01E56DA630062F6A0 /* Localize.swift */,
+				92B611EE1E56DA3F0062F6A0 /* String+LocalizedBundletableName.swift */,
+				9F0A1AF51DE2830B00855F09 /* HCDFoundationExtension.swift */,
+				9F0A1AF61DE2830B00855F09 /* HCDStructExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9F0A1B051DE2830B00855F09 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9F31AFF81DE44A17005E1D7C /* HCDKeychainManager.swift */,
+				9FB5D2DA1DE2AC0800C2CD3F /* GetPrimaryMACAddressInSwift.swift */,
+				9F0A1B071DE2830B00855F09 /* HCDNotificationHelper.swift */,
+				9F31AFF41DE3FD1B005E1D7C /* HCDLog.swift */,
+				928C25481E65075D00881E17 /* HCDAlert.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		9F0A1B201DE2867E00855F09 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9F68B4841DFFDBC800EEDEB2 /* Sync Control */,
+				9F04263A1DE56B0D005F539D /* File List */,
+				9F0426371DE56AB6005F539D /* Event */,
+				9F0A1B2F1DE2867E00855F09 /* Global */,
+				9F0A1B331DE2867E00855F09 /* Login */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9F0A1B2F1DE2867E00855F09 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				9F0426351DE56A6B005F539D /* HCDDeviceInformationVT.swift */,
+				9F0A1B301DE2867E00855F09 /* HCDError.swift */,
+				9F0A1B311DE2867E00855F09 /* HCDGlobalDefine.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		9F0A1B331DE2867E00855F09 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9F0A1B341DE2867E00855F09 /* HCDLoginCompleteInformationVT.swift */,
+				9F0A1B351DE2867E00855F09 /* HCDLoginInputInformationVT.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9F2FD59F1DE28BFF0034A6CA /* Supported File */ = {
+			isa = PBXGroup;
+			children = (
+				9F37A55E1DDEED4300B5256B /* AppDelegate.swift */,
+				9F37A5651DDEED4300B5256B /* Info.plist */,
+				9F2FD5A01DE28C360034A6CA /* CloudApp-Bridging-Header.h */,
+			);
+			path = "Supported File";
+			sourceTree = "<group>";
+		};
+		9F31AFFD1DE543D5005E1D7C /* Folder Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				9F31AFFE1DE543D5005E1D7C /* FSEventWatcher.swift */,
+				9F31AFFF1DE543D5005E1D7C /* HCDLocalFolderWatcher.swift */,
+			);
+			path = "Folder Monitor";
+			sourceTree = "<group>";
+		};
+		9F3548BC1DFEAA5A004F2410 /* CloudAppHelper */ = {
+			isa = PBXGroup;
+			children = (
+				927094341E514EFC007B3574 /* MofficeCloudAppHelper.entitlements */,
+				9FC10C451E306C6F001F26F6 /* CloudAppHelper.entitlements */,
+				9F3548BD1DFEAA5A004F2410 /* AppDelegate.h */,
+				9F3548BE1DFEAA5A004F2410 /* AppDelegate.m */,
+				9F3548C31DFEAA5A004F2410 /* Assets.xcassets */,
+				9F3548C51DFEAA5A004F2410 /* MainMenu.xib */,
+				927094351E514F5C007B3574 /* MofficeInfo.plist */,
+				9F3548C81DFEAA5A004F2410 /* Info.plist */,
+				9F3548C01DFEAA5A004F2410 /* Supporting Files */,
+			);
+			path = CloudAppHelper;
+			sourceTree = "<group>";
+		};
+		9F3548C01DFEAA5A004F2410 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F3548C11DFEAA5A004F2410 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9F37A5521DDEED4300B5256B = {
+			isa = PBXGroup;
+			children = (
+				9F37A55D1DDEED4300B5256B /* CloudApp */,
+				9F37A56D1DDEED4400B5256B /* CloudAppTests */,
+				9F3548BC1DFEAA5A004F2410 /* CloudAppHelper */,
+				9F37A55C1DDEED4300B5256B /* Products */,
+				9FE41B4A1DFF8B1C005302B6 /* Frameworks */,
+				9CE95691D8E16E4017C4A719 /* Pods */,
+				924559C21E4D9F5600D8553F /* MofficeAutoSync.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		9F37A55C1DDEED4300B5256B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F37A55B1DDEED4300B5256B /* Hanbiro AutoSync.app */,
+				9F37A56A1DDEED4400B5256B /* CloudAppTests.xctest */,
+				9F3548BB1DFEAA5A004F2410 /* CloudAppHelper.app */,
+				924559C11E4D9F5500D8553F /* Moffice AutoSync.app */,
+				927094321E514B4F007B3574 /* MofficeCloudAppHelper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F37A55D1DDEED4300B5256B /* CloudApp */ = {
+			isa = PBXGroup;
+			children = (
+				924559C31E4DB87C00D8553F /* MofficeCloudApp.entitlements */,
+				9F4EC6961E1E213E00A3306C /* CloudApp.entitlements */,
+				9F4213DB1DE690400075A0F7 /* Manager and Helper */,
+				9F37A58E1DDF03F100B5256B /* UI */,
+				9F0A1B201DE2867E00855F09 /* Entity */,
+				9F0A1AEA1DE2830B00855F09 /* Library */,
+				9F2FD59F1DE28BFF0034A6CA /* Supported File */,
+				9F0A1AE91DE2815000855F09 /* Framework */,
+				9F37A5791DDEF36500B5256B /* Resources */,
+			);
+			path = CloudApp;
+			sourceTree = "<group>";
+		};
+		9F37A56D1DDEED4400B5256B /* CloudAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F37A56E1DDEED4400B5256B /* CloudAppTests.swift */,
+				9F37A5701DDEED4400B5256B /* Info.plist */,
+			);
+			path = CloudAppTests;
+			sourceTree = "<group>";
+		};
+		9F37A5791DDEF36500B5256B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				92B611FE1E56E7550062F6A0 /* en.lproj */,
+				92B612011E56E7550062F6A0 /* ja.lproj */,
+				92B612041E56E7550062F6A0 /* ko.lproj */,
+				9F37A5601DDEED4300B5256B /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9F37A58E1DDF03F100B5256B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9F37A5621DDEED4300B5256B /* MainMenu.xib */,
+				92C052AF1E60126500565457 /* SyncFail */,
+				9F4259271E08D3C000A6872D /* Debug */,
+				9FEE9A4B1E0102E100CB213D /* Preferences */,
+				9F37A58F1DDF03F100B5256B /* Base */,
+				9F37A5911DDF03F100B5256B /* Login */,
+				9F37A5951DDF03F100B5256B /* Menu */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9F37A58F1DDF03F100B5256B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9F37A5901DDF03F100B5256B /* HCDBaseViewController.swift */,
+				9F0A1B1E1DE2840600855F09 /* HCDAnimatingView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9F37A5911DDF03F100B5256B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9FB5D2D61DE2A06B00C2CD3F /* HCDLoginViewController.swift */,
+				9FC10C561E307C07001F26F6 /* HCDLoginViewController.xib */,
+				9F3750BC1E2DC6D000C26558 /* HCDSelectSyncFolder.swift */,
+				9FC10C5F1E307C51001F26F6 /* HCDSelectSyncFolder.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9F37A5951DDF03F100B5256B /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				9F37A5971DDF03F100B5256B /* HCDStatusMenuController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		9F4213D21DE689580075A0F7 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				9F4213D31DE689AC0075A0F7 /* HCDDataManager.swift */,
+				9FA76A3B1DE691C600C0C1D4 /* HCDItemDataManager.swift */,
+				9F44A8691DED2C9500697ECA /* HCDEventDataManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		9F4213DB1DE690400075A0F7 /* Manager and Helper */ = {
+			isa = PBXGroup;
+			children = (
+				9F959E6F1DEE79CD0095858D /* Event Executor */,
+				9F4213DC1DE690400075A0F7 /* Authenticate */,
+				9F4213DF1DE690400075A0F7 /* Event Listener */,
+				9F4213E11DE690400075A0F7 /* File List */,
+				9F4213E31DE690400075A0F7 /* File Management */,
+				9F4213E61DE690400075A0F7 /* Utility */,
+			);
+			path = "Manager and Helper";
+			sourceTree = "<group>";
+		};
+		9F4213DC1DE690400075A0F7 /* Authenticate */ = {
+			isa = PBXGroup;
+			children = (
+				9F4213DD1DE690400075A0F7 /* HCDLoginInformationManager.swift */,
+				9F4213DE1DE690400075A0F7 /* HCDLoginManager.swift */,
+			);
+			path = Authenticate;
+			sourceTree = "<group>";
+		};
+		9F4213DF1DE690400075A0F7 /* Event Listener */ = {
+			isa = PBXGroup;
+			children = (
+				9F44A8781DED594A00697ECA /* Server */,
+				9F44A8711DED593A00697ECA /* Local */,
+				9F44A86F1DED3B0F00697ECA /* HCDEventTakingManager.swift */,
+			);
+			path = "Event Listener";
+			sourceTree = "<group>";
+		};
+		9F4213E11DE690400075A0F7 /* File List */ = {
+			isa = PBXGroup;
+			children = (
+				9FA76A3D1DE6C5EE00C0C1D4 /* HCDFileListManager.swift */,
+				9F4213E21DE690400075A0F7 /* HCDServerFileListUpdater.swift */,
+				9FA76A3F1DE6C78500C0C1D4 /* HCDLocalFileListUpdater.swift */,
+				9F3705D61E2C77CA00F775E7 /* HCDFileListComparator.swift */,
+			);
+			path = "File List";
+			sourceTree = "<group>";
+		};
+		9F4213E31DE690400075A0F7 /* File Management */ = {
+			isa = PBXGroup;
+			children = (
+				9F4213E41DE690400075A0F7 /* HCDFileManager.swift */,
+				9F4213E51DE690400075A0F7 /* HCDPathHelper.swift */,
+			);
+			path = "File Management";
+			sourceTree = "<group>";
+		};
+		9F4213E61DE690400075A0F7 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9F4213E71DE690400075A0F7 /* HCDUserDefaultManager.swift */,
+				9F4213E81DE690400075A0F7 /* HCDUtilityHelper.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		9F4259271E08D3C000A6872D /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				9FF0C03E1E0CE5B4001556F3 /* HCDDebugWindowController.swift */,
+				9F52BD211E287AAF00397D67 /* HCDDebugWindowController.xib */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		9F44A8711DED593A00697ECA /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				9F44A8721DED593A00697ECA /* HCDEventAnalyzeHelper.swift */,
+				9F44A8731DED593A00697ECA /* HCDEventAnalyzer.swift */,
+				9F44A8741DED593A00697ECA /* HCDLocalEventListenManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		9F44A8781DED594A00697ECA /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				9F44A8791DED598900697ECA /* HCDServerEventListenManager.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		9F68B4841DFFDBC800EEDEB2 /* Sync Control */ = {
+			isa = PBXGroup;
+			children = (
+				9F68B4851DFFDBC800EEDEB2 /* HCDSyncState.swift */,
+				9F68B4861DFFDBC800EEDEB2 /* HCDSyncTask.swift */,
+			);
+			path = "Sync Control";
+			sourceTree = "<group>";
+		};
+		9F959E6F1DEE79CD0095858D /* Event Executor */ = {
+			isa = PBXGroup;
+			children = (
+				9F959E701DEE79ED0095858D /* HCDEventExecutingManager.swift */,
+				9F3321761DF79D1100ADBC5C /* HCDSyncManager.swift */,
+			);
+			path = "Event Executor";
+			sourceTree = "<group>";
+		};
+		9FB5D2E11DE2D35000C2CD3F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9F284A7D1DF951A000BE494B /* HCDNetworkStatusInformationManager.swift */,
+				9FB5D2E61DE3E3A800C2CD3F /* HCDNetworkDataConverter.swift */,
+				9FB5D2E21DE2D38200C2CD3F /* HCDNetworkManager.swift */,
+				9FB5D2E41DE3D56B00C2CD3F /* HCDPostRouter.swift */,
+				9F284A771DF9004800BE494B /* AsynchronousOperation.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		9FE41B4A1DFF8B1C005302B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FE41B4B1DFF8B1C005302B6 /* ServiceManagement.framework */,
+				C633D0520AA2667020A3E437 /* Pods_CloudAppHelper.framework */,
+				F7A2E6FA2FC6F763DB2ED769 /* Pods_Hanbiro_AutoSync.framework */,
+				5BD17B55B6AADB8BBB35217A /* Pods_MofficeCloudAppHelper.framework */,
+				7D2B2EC313AF6CFD7180ADCF /* Pods_Moffice_AutoSync.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9FEE9A4B1E0102E100CB213D /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				9FEE9A4C1E01034800CB213D /* HCDPreferencesWindow.swift */,
+				9F1CCB231E012E8F0082E445 /* HCDGeneralPreferencesViewController.swift */,
+				9F52BD261E287B1300397D67 /* HCDGeneralPreferencesViewController.xib */,
+				9F1CCB271E01352B0082E445 /* HCDAccountPreferencesViewController.swift */,
+				9F52BD2B1E287B2900397D67 /* HCDAccountPreferencesViewController.xib */,
+				9F1CCB2B1E0139270082E445 /* HCDAboutPreferencesViewController.swift */,
+				9F52BD301E287B4900397D67 /* HCDAboutPreferencesViewController.xib */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		924559661E4D9F5500D8553F /* Moffice AutoSync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 924559BE1E4D9F5500D8553F /* Build configuration list for PBXNativeTarget "Moffice AutoSync" */;
+			buildPhases = (
+				24B65B0E81C126A7B5CD9EDB /* [CP] Check Pods Manifest.lock */,
+				924559681E4D9F5500D8553F /* Sources */,
+				924559A71E4D9F5500D8553F /* Frameworks */,
+				924559AC1E4D9F5500D8553F /* Resources */,
+				924559B61E4D9F5500D8553F /* Embed Frameworks */,
+				924559B91E4D9F5500D8553F /* CopyFiles */,
+				924559BB1E4D9F5500D8553F /* ShellScript */,
+				AA2FA26F6403DF183790A466 /* [CP] Embed Pods Frameworks */,
+				460DD02CC355E5F8F7D73D80 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Moffice AutoSync";
+			productName = CloudApp;
+			productReference = 924559C11E4D9F5500D8553F /* Moffice AutoSync.app */;
+			productType = "com.apple.product-type.application";
+		};
+		927094231E514B4F007B3574 /* MofficeCloudAppHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9270942F1E514B4F007B3574 /* Build configuration list for PBXNativeTarget "MofficeCloudAppHelper" */;
+			buildPhases = (
+				A64827C6B68F98B911D63CE4 /* [CP] Check Pods Manifest.lock */,
+				927094251E514B4F007B3574 /* Sources */,
+				927094281E514B4F007B3574 /* Frameworks */,
+				9270942A1E514B4F007B3574 /* Resources */,
+				FFA9CA0BC3081BF1BE1CA7DC /* [CP] Embed Pods Frameworks */,
+				65FBC160D4C5FCB424869381 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MofficeCloudAppHelper;
+			productName = CloudAppHelper;
+			productReference = 927094321E514B4F007B3574 /* MofficeCloudAppHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F3548BA1DFEAA5A004F2410 /* CloudAppHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F3548C91DFEAA5A004F2410 /* Build configuration list for PBXNativeTarget "CloudAppHelper" */;
+			buildPhases = (
+				C50AC775F9ED072A6EF6F28D /* [CP] Check Pods Manifest.lock */,
+				9F3548B71DFEAA5A004F2410 /* Sources */,
+				9F3548B81DFEAA5A004F2410 /* Frameworks */,
+				9F3548B91DFEAA5A004F2410 /* Resources */,
+				9311E11B94EF4CBFEFDD81E3 /* [CP] Embed Pods Frameworks */,
+				6DA2CE692001455261018804 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudAppHelper;
+			productName = CloudAppHelper;
+			productReference = 9F3548BB1DFEAA5A004F2410 /* CloudAppHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F37A55A1DDEED4300B5256B /* Hanbiro AutoSync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F37A5731DDEED4400B5256B /* Build configuration list for PBXNativeTarget "Hanbiro AutoSync" */;
+			buildPhases = (
+				69723ABA82D50D404C0B1609 /* [CP] Check Pods Manifest.lock */,
+				9F37A5571DDEED4300B5256B /* Sources */,
+				9F37A5581DDEED4300B5256B /* Frameworks */,
+				9F37A5591DDEED4300B5256B /* Resources */,
+				9F0A1B791DE2882600855F09 /* Embed Frameworks */,
+				9F3548B51DFEA9CF004F2410 /* CopyFiles */,
+				9FF0C0391E0CDB65001556F3 /* ShellScript */,
+				6F18959E755ACCCB7DDA4836 /* [CP] Embed Pods Frameworks */,
+				AD36FA2EF980CD05AC41066B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hanbiro AutoSync";
+			productName = CloudApp;
+			productReference = 9F37A55B1DDEED4300B5256B /* Hanbiro AutoSync.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F37A5691DDEED4400B5256B /* CloudAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F37A5761DDEED4400B5256B /* Build configuration list for PBXNativeTarget "CloudAppTests" */;
+			buildPhases = (
+				9F37A5661DDEED4400B5256B /* Sources */,
+				9F37A5671DDEED4400B5256B /* Frameworks */,
+				9F37A5681DDEED4400B5256B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F37A56C1DDEED4400B5256B /* PBXTargetDependency */,
+			);
+			name = CloudAppTests;
+			productName = CloudAppTests;
+			productReference = 9F37A56A1DDEED4400B5256B /* CloudAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F37A5531DDEED4300B5256B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Hanbiro Inc";
+				TargetAttributes = {
+					924559661E4D9F5500D8553F = {
+						DevelopmentTeam = 52RS2S2FDQ;
+					};
+					927094231E514B4F007B3574 = {
+						DevelopmentTeam = 52RS2S2FDQ;
+					};
+					9F3548BA1DFEAA5A004F2410 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 9689HPSFXL;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					9F37A55A1DDEED4300B5256B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9689HPSFXL;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					9F37A5691DDEED4400B5256B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9689HPSFXL;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9F37A55A1DDEED4300B5256B;
+					};
+				};
+			};
+			buildConfigurationList = 9F37A5561DDEED4300B5256B /* Build configuration list for PBXProject "CloudApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+				ko,
+			);
+			mainGroup = 9F37A5521DDEED4300B5256B;
+			productRefGroup = 9F37A55C1DDEED4300B5256B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F37A55A1DDEED4300B5256B /* Hanbiro AutoSync */,
+				924559661E4D9F5500D8553F /* Moffice AutoSync */,
+				9F37A5691DDEED4400B5256B /* CloudAppTests */,
+				9F3548BA1DFEAA5A004F2410 /* CloudAppHelper */,
+				927094231E514B4F007B3574 /* MofficeCloudAppHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		924559AC1E4D9F5500D8553F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924559AD1E4D9F5500D8553F /* Assets.xcassets in Resources */,
+				92C052B21E60138F00565457 /* HCDSyncFailsWindowController.xib in Resources */,
+				924559AE1E4D9F5500D8553F /* MainMenu.xib in Resources */,
+				924559AF1E4D9F5500D8553F /* HCDAccountPreferencesViewController.xib in Resources */,
+				924559B01E4D9F5500D8553F /* HCDGeneralPreferencesViewController.xib in Resources */,
+				924559B11E4D9F5500D8553F /* HCDLoginViewController.xib in Resources */,
+				924559B31E4D9F5500D8553F /* HCDAboutPreferencesViewController.xib in Resources */,
+				924559B41E4D9F5500D8553F /* HCDDebugWindowController.xib in Resources */,
+				924559B51E4D9F5500D8553F /* HCDSelectSyncFolder.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9270942A1E514B4F007B3574 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9270942B1E514B4F007B3574 /* Assets.xcassets in Resources */,
+				9270942C1E514B4F007B3574 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F3548B91DFEAA5A004F2410 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F3548C41DFEAA5A004F2410 /* Assets.xcassets in Resources */,
+				9F3548C71DFEAA5A004F2410 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F37A5591DDEED4300B5256B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F37A5611DDEED4300B5256B /* Assets.xcassets in Resources */,
+				9F37A5641DDEED4300B5256B /* MainMenu.xib in Resources */,
+				92B612091E56E7550062F6A0 /* Localizable.strings in Resources */,
+				9F52BD291E287B2900397D67 /* HCDAccountPreferencesViewController.xib in Resources */,
+				9F52BD241E287B1300397D67 /* HCDGeneralPreferencesViewController.xib in Resources */,
+				92B612071E56E7550062F6A0 /* Localizable.strings in Resources */,
+				92B612081E56E7550062F6A0 /* Localizable.strings in Resources */,
+				92C052B11E60138F00565457 /* HCDSyncFailsWindowController.xib in Resources */,
+				9FC10C541E307C07001F26F6 /* HCDLoginViewController.xib in Resources */,
+				9F52BD2E1E287B4900397D67 /* HCDAboutPreferencesViewController.xib in Resources */,
+				9F52BD1F1E287AAF00397D67 /* HCDDebugWindowController.xib in Resources */,
+				9FC10C5D1E307C51001F26F6 /* HCDSelectSyncFolder.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F37A5681DDEED4400B5256B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24B65B0E81C126A7B5CD9EDB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		460DD02CC355E5F8F7D73D80 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Moffice AutoSync/Pods-Moffice AutoSync-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65FBC160D4C5FCB424869381 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MofficeCloudAppHelper/Pods-MofficeCloudAppHelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69723ABA82D50D404C0B1609 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6DA2CE692001455261018804 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudAppHelper/Pods-CloudAppHelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F18959E755ACCCB7DDA4836 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hanbiro AutoSync/Pods-Hanbiro AutoSync-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		924559BB1E4D9F5500D8553F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 89d36f114789c6e3de8199e4fc049ae9587924d9 42e2fdf8c43c2a5d1bb3b012e0bf3d73dd35859db2224f3020450d617e829679";
+		};
+		9311E11B94EF4CBFEFDD81E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudAppHelper/Pods-CloudAppHelper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FF0C0391E0CDB65001556F3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 89d36f114789c6e3de8199e4fc049ae9587924d9 42e2fdf8c43c2a5d1bb3b012e0bf3d73dd35859db2224f3020450d617e829679";
+		};
+		A64827C6B68F98B911D63CE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AA2FA26F6403DF183790A466 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Moffice AutoSync/Pods-Moffice AutoSync-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD36FA2EF980CD05AC41066B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hanbiro AutoSync/Pods-Hanbiro AutoSync-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C50AC775F9ED072A6EF6F28D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FFA9CA0BC3081BF1BE1CA7DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MofficeCloudAppHelper/Pods-MofficeCloudAppHelper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		924559681E4D9F5500D8553F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924559691E4D9F5500D8553F /* HCDServerEvent.swift in Sources */,
+				9245596A1E4D9F5500D8553F /* HCDDeviceInformationVT.swift in Sources */,
+				9245596B1E4D9F5500D8553F /* HCDEventTakingManager.swift in Sources */,
+				9245596C1E4D9F5500D8553F /* GetPrimaryMACAddressInSwift.swift in Sources */,
+				9245596D1E4D9F5500D8553F /* HCDKeychainManager.swift in Sources */,
+				9245596E1E4D9F5500D8553F /* HCDAboutPreferencesViewController.swift in Sources */,
+				9245596F1E4D9F5500D8553F /* HCDLocalFolderWatcher.swift in Sources */,
+				924559701E4D9F5500D8553F /* HCDItemBook.swift in Sources */,
+				924559711E4D9F5500D8553F /* HCDLoginInformationManager.swift in Sources */,
+				924559721E4D9F5500D8553F /* HCDLocalEventListenManager.swift in Sources */,
+				926B61811E600A6B008BB038 /* String+LocalizedBundletableName.swift in Sources */,
+				924559731E4D9F5500D8553F /* HCDEventObject.swift in Sources */,
+				924559741E4D9F5500D8553F /* HCDDataManager.swift in Sources */,
+				924559751E4D9F5500D8553F /* HCDEvent.swift in Sources */,
+				924559761E4D9F5500D8553F /* HCDNetworkManager.swift in Sources */,
+				924559771E4D9F5500D8553F /* HCDLocalRawEvent.swift in Sources */,
+				924559781E4D9F5500D8553F /* HCDSyncTask.swift in Sources */,
+				924559791E4D9F5500D8553F /* HCDDebugWindowController.swift in Sources */,
+				9245597A1E4D9F5500D8553F /* HCDGeneralPreferencesViewController.swift in Sources */,
+				9245597B1E4D9F5500D8553F /* HCDEventAnalyzer.swift in Sources */,
+				9245597C1E4D9F5500D8553F /* HCDPostRouter.swift in Sources */,
+				9245597D1E4D9F5500D8553F /* HCDFileListComparator.swift in Sources */,
+				9245597E1E4D9F5500D8553F /* HCDError.swift in Sources */,
+				9245597F1E4D9F5500D8553F /* HCDFileManager.swift in Sources */,
+				924559801E4D9F5500D8553F /* HCDRawItemFromServerList.swift in Sources */,
+				924559811E4D9F5500D8553F /* HCDItem.swift in Sources */,
+				924559821E4D9F5500D8553F /* HCDItemObject.swift in Sources */,
+				924559831E4D9F5500D8553F /* HCDItemDataManager.swift in Sources */,
+				926B61821E600A6E008BB038 /* Localize.swift in Sources */,
+				924559841E4D9F5500D8553F /* HCDLog.swift in Sources */,
+				924559851E4D9F5500D8553F /* HCDNetworkDataConverter.swift in Sources */,
+				924559861E4D9F5500D8553F /* HCDSyncManager.swift in Sources */,
+				924559871E4D9F5500D8553F /* HCDLocalEvent.swift in Sources */,
+				924559881E4D9F5500D8553F /* HCDLocalFileListUpdater.swift in Sources */,
+				924559891E4D9F5500D8553F /* HCDLoginViewController.swift in Sources */,
+				9245598A1E4D9F5500D8553F /* HCDEventAnalyzeHelper.swift in Sources */,
+				9245598B1E4D9F5500D8553F /* HCDLoginManager.swift in Sources */,
+				9245598C1E4D9F5500D8553F /* HCDAccountPreferencesViewController.swift in Sources */,
+				9245598D1E4D9F5500D8553F /* HCDLoginCompleteInformationVT.swift in Sources */,
+				9245598E1E4D9F5500D8553F /* HCDLoginInputInformationVT.swift in Sources */,
+				9245598F1E4D9F5500D8553F /* HCDNetworkStatusInformationManager.swift in Sources */,
+				924559901E4D9F5500D8553F /* HCDStructExtension.swift in Sources */,
+				924559911E4D9F5500D8553F /* HCDStatusMenuController.swift in Sources */,
+				924559921E4D9F5500D8553F /* HCDPathHelper.swift in Sources */,
+				928C254A1E65075D00881E17 /* HCDAlert.swift in Sources */,
+				924559931E4D9F5500D8553F /* HCDNotificationHelper.swift in Sources */,
+				924559941E4D9F5500D8553F /* HCDServerRawEvent.swift in Sources */,
+				924559951E4D9F5500D8553F /* HCDServerFileListUpdater.swift in Sources */,
+				924559961E4D9F5500D8553F /* HCDFileListManager.swift in Sources */,
+				924559971E4D9F5500D8553F /* HCDSyncState.swift in Sources */,
+				924559981E4D9F5500D8553F /* AsynchronousOperation.swift in Sources */,
+				924559991E4D9F5500D8553F /* HCDSelectSyncFolder.swift in Sources */,
+				9245599A1E4D9F5500D8553F /* HCDGlobalDefine.swift in Sources */,
+				9245599B1E4D9F5500D8553F /* HCDEventExecutingManager.swift in Sources */,
+				9245599C1E4D9F5500D8553F /* AppDelegate.swift in Sources */,
+				9245599D1E4D9F5500D8553F /* HCDEventNote.swift in Sources */,
+				9245599E1E4D9F5500D8553F /* HCDBaseViewController.swift in Sources */,
+				92C052B51E6013AB00565457 /* HCDSyncFailsWindowController.swift in Sources */,
+				9245599F1E4D9F5500D8553F /* HCDPreferencesWindow.swift in Sources */,
+				924559A01E4D9F5500D8553F /* HCDUtilityHelper.swift in Sources */,
+				924559A11E4D9F5500D8553F /* HCDAnimatingView.swift in Sources */,
+				924559A21E4D9F5500D8553F /* HCDFoundationExtension.swift in Sources */,
+				924559A31E4D9F5500D8553F /* HCDServerEventListenManager.swift in Sources */,
+				924559A41E4D9F5500D8553F /* HCDEventDataManager.swift in Sources */,
+				924559A51E4D9F5500D8553F /* FSEventWatcher.swift in Sources */,
+				924559A61E4D9F5500D8553F /* HCDUserDefaultManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		927094251E514B4F007B3574 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927094261E514B4F007B3574 /* main.m in Sources */,
+				927094271E514B4F007B3574 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F3548B71DFEAA5A004F2410 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F3548C21DFEAA5A004F2410 /* main.m in Sources */,
+				9F3548BF1DFEAA5A004F2410 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F37A5571DDEED4300B5256B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F45FC171DE815D10024163B /* HCDServerEvent.swift in Sources */,
+				9F0426361DE56A6B005F539D /* HCDDeviceInformationVT.swift in Sources */,
+				9F44A8701DED3B0F00697ECA /* HCDEventTakingManager.swift in Sources */,
+				9FB5D2DB1DE2AC0800C2CD3F /* GetPrimaryMACAddressInSwift.swift in Sources */,
+				9F31AFF91DE44A17005E1D7C /* HCDKeychainManager.swift in Sources */,
+				9F1CCB2D1E0139270082E445 /* HCDAboutPreferencesViewController.swift in Sources */,
+				9F31B0011DE543D5005E1D7C /* HCDLocalFolderWatcher.swift in Sources */,
+				9F4213DA1DE68F6C0075A0F7 /* HCDItemBook.swift in Sources */,
+				9F4213E91DE690400075A0F7 /* HCDLoginInformationManager.swift in Sources */,
+				9F44A8771DED593A00697ECA /* HCDLocalEventListenManager.swift in Sources */,
+				92B611EF1E56DA3F0062F6A0 /* String+LocalizedBundletableName.swift in Sources */,
+				9F44A86C1DED2E8B00697ECA /* HCDEventObject.swift in Sources */,
+				9F4213D41DE689AC0075A0F7 /* HCDDataManager.swift in Sources */,
+				9F45FC151DE815D10024163B /* HCDEvent.swift in Sources */,
+				9FB5D2E31DE2D38200C2CD3F /* HCDNetworkManager.swift in Sources */,
+				9F0426391DE56AB6005F539D /* HCDLocalRawEvent.swift in Sources */,
+				9F68B4881DFFDBC800EEDEB2 /* HCDSyncTask.swift in Sources */,
+				9FF0C0401E0CE5B4001556F3 /* HCDDebugWindowController.swift in Sources */,
+				9F1CCB251E012E8F0082E445 /* HCDGeneralPreferencesViewController.swift in Sources */,
+				9F44A8761DED593A00697ECA /* HCDEventAnalyzer.swift in Sources */,
+				9FB5D2E51DE3D56B00C2CD3F /* HCDPostRouter.swift in Sources */,
+				9F3705D71E2C77CA00F775E7 /* HCDFileListComparator.swift in Sources */,
+				9F0A1B4D1DE2867E00855F09 /* HCDError.swift in Sources */,
+				9F4213ED1DE690400075A0F7 /* HCDFileManager.swift in Sources */,
+				9F04263E1DE56B0D005F539D /* HCDRawItemFromServerList.swift in Sources */,
+				9F04263D1DE56B0D005F539D /* HCDItem.swift in Sources */,
+				9F4213D61DE689FB0075A0F7 /* HCDItemObject.swift in Sources */,
+				9FA76A3C1DE691C600C0C1D4 /* HCDItemDataManager.swift in Sources */,
+				92B611F11E56DA630062F6A0 /* Localize.swift in Sources */,
+				9F31AFF51DE3FD1B005E1D7C /* HCDLog.swift in Sources */,
+				9FB5D2E71DE3E3A800C2CD3F /* HCDNetworkDataConverter.swift in Sources */,
+				9F3321771DF79D1100ADBC5C /* HCDSyncManager.swift in Sources */,
+				9F45FC161DE815D10024163B /* HCDLocalEvent.swift in Sources */,
+				9FA76A401DE6C78500C0C1D4 /* HCDLocalFileListUpdater.swift in Sources */,
+				9FB5D2D81DE2A06B00C2CD3F /* HCDLoginViewController.swift in Sources */,
+				9F44A8751DED593A00697ECA /* HCDEventAnalyzeHelper.swift in Sources */,
+				9F4213EA1DE690400075A0F7 /* HCDLoginManager.swift in Sources */,
+				9F1CCB291E01352B0082E445 /* HCDAccountPreferencesViewController.swift in Sources */,
+				9F0A1B501DE2867E00855F09 /* HCDLoginCompleteInformationVT.swift in Sources */,
+				9F0A1B511DE2867E00855F09 /* HCDLoginInputInformationVT.swift in Sources */,
+				9F284A7E1DF951A000BE494B /* HCDNetworkStatusInformationManager.swift in Sources */,
+				9F0A1B111DE2830B00855F09 /* HCDStructExtension.swift in Sources */,
+				9F37A59C1DDF03F100B5256B /* HCDStatusMenuController.swift in Sources */,
+				9F4213EE1DE690400075A0F7 /* HCDPathHelper.swift in Sources */,
+				928C25491E65075D00881E17 /* HCDAlert.swift in Sources */,
+				9F0A1B1C1DE2830B00855F09 /* HCDNotificationHelper.swift in Sources */,
+				9F45FC181DE815D10024163B /* HCDServerRawEvent.swift in Sources */,
+				9F4213EC1DE690400075A0F7 /* HCDServerFileListUpdater.swift in Sources */,
+				9FA76A3E1DE6C5EE00C0C1D4 /* HCDFileListManager.swift in Sources */,
+				9F68B4871DFFDBC800EEDEB2 /* HCDSyncState.swift in Sources */,
+				9F284A781DF9004800BE494B /* AsynchronousOperation.swift in Sources */,
+				9F3750BE1E2DC6D000C26558 /* HCDSelectSyncFolder.swift in Sources */,
+				9F0A1B4E1DE2867E00855F09 /* HCDGlobalDefine.swift in Sources */,
+				9F959E711DEE79ED0095858D /* HCDEventExecutingManager.swift in Sources */,
+				9F37A55F1DDEED4300B5256B /* AppDelegate.swift in Sources */,
+				9F35B57A1E23813200AF3D2E /* HCDEventNote.swift in Sources */,
+				9F37A5981DDF03F100B5256B /* HCDBaseViewController.swift in Sources */,
+				92C052B41E6013AB00565457 /* HCDSyncFailsWindowController.swift in Sources */,
+				9FEE9A4E1E01034800CB213D /* HCDPreferencesWindow.swift in Sources */,
+				9F4213F01DE690400075A0F7 /* HCDUtilityHelper.swift in Sources */,
+				9F0A1B1F1DE2840600855F09 /* HCDAnimatingView.swift in Sources */,
+				9F0A1B101DE2830B00855F09 /* HCDFoundationExtension.swift in Sources */,
+				9F44A87A1DED598900697ECA /* HCDServerEventListenManager.swift in Sources */,
+				9F44A86A1DED2C9500697ECA /* HCDEventDataManager.swift in Sources */,
+				9F31B0001DE543D5005E1D7C /* FSEventWatcher.swift in Sources */,
+				9F4213EF1DE690400075A0F7 /* HCDUserDefaultManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F37A5661DDEED4400B5256B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F37A56F1DDEED4400B5256B /* CloudAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F37A56C1DDEED4400B5256B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F37A55A1DDEED4300B5256B /* Hanbiro AutoSync */;
+			targetProxy = 9F37A56B1DDEED4400B5256B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		92B611FF1E56E7550062F6A0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92B612001E56E7550062F6A0 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		92B612021E56E7550062F6A0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92B612031E56E7550062F6A0 /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		92B612051E56E7550062F6A0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92B612061E56E7550062F6A0 /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		9F3548C51DFEAA5A004F2410 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F3548C61DFEAA5A004F2410 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		9F37A5621DDEED4300B5256B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F37A5631DDEED4300B5256B /* Base */,
+			);
+			name = MainMenu.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		9F52BD211E287AAF00397D67 /* HCDDebugWindowController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F52BD201E287AAF00397D67 /* Base */,
+			);
+			name = HCDDebugWindowController.xib;
+			sourceTree = "<group>";
+		};
+		9F52BD261E287B1300397D67 /* HCDGeneralPreferencesViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F52BD251E287B1300397D67 /* Base */,
+			);
+			name = HCDGeneralPreferencesViewController.xib;
+			sourceTree = "<group>";
+		};
+		9F52BD2B1E287B2900397D67 /* HCDAccountPreferencesViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F52BD2A1E287B2900397D67 /* Base */,
+			);
+			name = HCDAccountPreferencesViewController.xib;
+			sourceTree = "<group>";
+		};
+		9F52BD301E287B4900397D67 /* HCDAboutPreferencesViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F52BD2F1E287B4900397D67 /* Base */,
+			);
+			name = HCDAboutPreferencesViewController.xib;
+			sourceTree = "<group>";
+		};
+		9FC10C561E307C07001F26F6 /* HCDLoginViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FC10C551E307C07001F26F6 /* Base */,
+			);
+			name = HCDLoginViewController.xib;
+			sourceTree = "<group>";
+		};
+		9FC10C5F1E307C51001F26F6 /* HCDSelectSyncFolder.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FC10C5E1E307C51001F26F6 /* Base */,
+			);
+			name = HCDSelectSyncFolder.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		924559BF1E4D9F5500D8553F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF38AF1E89D2C1D79EE8DA30 /* Pods-Moffice AutoSync.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = MofficeIcon;
+				CODE_SIGN_ENTITLEMENTS = CloudApp/MofficeCloudApp.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 52RS2S2FDQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/CloudApp",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/MofficeAutoSync.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DMOFFICE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanbiro.MofficeCloudAutoSyncApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0.1;
+			};
+			name = Debug;
+		};
+		924559C01E4D9F5500D8553F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19DB1B6EE18271C2A946B218 /* Pods-Moffice AutoSync.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = MofficeIcon;
+				CODE_SIGN_ENTITLEMENTS = CloudApp/MofficeCloudApp.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 52RS2S2FDQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/CloudApp",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/MofficeAutoSync.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DMOFFICE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanbiro.MofficeCloudAutoSyncApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0.1;
+			};
+			name = Release;
+		};
+		927094301E514B4F007B3574 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6816A6980DD4AEE4E8C91553 /* Pods-MofficeCloudAppHelper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CloudAppHelper/MofficeCloudAppHelper.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 52RS2S2FDQ;
+				INFOPLIST_FILE = CloudAppHelper/MofficeInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanbiro.MofficeCloudAppHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		927094311E514B4F007B3574 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 777EB4CA6E804FFED4E04A75 /* Pods-MofficeCloudAppHelper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CloudAppHelper/MofficeCloudAppHelper.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 52RS2S2FDQ;
+				INFOPLIST_FILE = CloudAppHelper/MofficeInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanbiro.MofficeCloudAppHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9F3548CA1DFEAA5A004F2410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E09602E821BED4AB5DFFA7E /* Pods-CloudAppHelper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CloudAppHelper/CloudAppHelper.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9689HPSFXL;
+				INFOPLIST_FILE = CloudAppHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanbiro.CloudAppHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9F3548CB1DFEAA5A004F2410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C7A249B0436623BDC7769AD /* Pods-CloudAppHelper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CloudAppHelper/CloudAppHelper.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9689HPSFXL;
+				INFOPLIST_FILE = CloudAppHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanbiro.CloudAppHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9F37A5711DDEED4400B5256B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
+			};
+			name = Debug;
+		};
+		9F37A5721DDEED4400B5256B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0.1;
+			};
+			name = Release;
+		};
+		9F37A5741DDEED4400B5256B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C550E188861D217BC8D85282 /* Pods-Hanbiro AutoSync.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CloudApp/CloudApp.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9689HPSFXL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/CloudApp",
+				);
+				INFOPLIST_FILE = CloudApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanbiro.CloudApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0.1;
+			};
+			name = Debug;
+		};
+		9F37A5751DDEED4400B5256B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86C2063DD2E3760F81D98399 /* Pods-Hanbiro AutoSync.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CloudApp/CloudApp.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9689HPSFXL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/CloudApp",
+				);
+				INFOPLIST_FILE = CloudApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanbiro.CloudApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0.1;
+			};
+			name = Release;
+		};
+		9F37A5771DDEED4400B5256B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9689HPSFXL;
+				INFOPLIST_FILE = CloudAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanbiro.CloudAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0.1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudApp.app/Contents/MacOS/CloudApp";
+			};
+			name = Debug;
+		};
+		9F37A5781DDEED4400B5256B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9689HPSFXL;
+				INFOPLIST_FILE = CloudAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanbiro.CloudAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0.1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudApp.app/Contents/MacOS/CloudApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		924559BE1E4D9F5500D8553F /* Build configuration list for PBXNativeTarget "Moffice AutoSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				924559BF1E4D9F5500D8553F /* Debug */,
+				924559C01E4D9F5500D8553F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9270942F1E514B4F007B3574 /* Build configuration list for PBXNativeTarget "MofficeCloudAppHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				927094301E514B4F007B3574 /* Debug */,
+				927094311E514B4F007B3574 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F3548C91DFEAA5A004F2410 /* Build configuration list for PBXNativeTarget "CloudAppHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F3548CA1DFEAA5A004F2410 /* Debug */,
+				9F3548CB1DFEAA5A004F2410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F37A5561DDEED4300B5256B /* Build configuration list for PBXProject "CloudApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F37A5711DDEED4400B5256B /* Debug */,
+				9F37A5721DDEED4400B5256B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F37A5731DDEED4400B5256B /* Build configuration list for PBXNativeTarget "Hanbiro AutoSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F37A5741DDEED4400B5256B /* Debug */,
+				9F37A5751DDEED4400B5256B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F37A5761DDEED4400B5256B /* Build configuration list for PBXNativeTarget "CloudAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F37A5771DDEED4400B5256B /* Debug */,
+				9F37A5781DDEED4400B5256B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F37A5531DDEED4300B5256B /* Project object */;
+}
